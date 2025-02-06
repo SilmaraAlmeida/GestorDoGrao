@@ -8,15 +8,19 @@
     <!-- BOOTSTRAP 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <!-- ICON -->
     <link rel="icon" href="<?= base_url('public/assets/images/cafe-favicon.png') ?>" type="image/x-icon">
 
     <title>Gestor do Grão - Home</title>
     <style>
+        /* NAVBAR */
+
         .navbar {
             background-color: transparent !important;
-            background-color: rgba(0, 0, 0, 0.5) !important; /* Fundo preto com transparência */
-            backdrop-filter: blur(10px) !important; /* Efeito de desfoque */
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            backdrop-filter: blur(10px) !important;
         }
 
         header {
@@ -31,11 +35,42 @@
             font-size: 18px;
         }
 
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #006135;
+        }
+
+        .nav-link {
+            transition: all 0.3s;
+        }
+
         .navbar-light .navbar-brand {
             color: #fff;
             font-size: 30px;
         }
 
+        /* CARDS */
+        .card .icon {
+            color: #006135;
+            font-size: 2rem;
+        }
+
+        .card .card-text {
+            color: #666666;
+        }
+
+        .card:hover {
+            background-color: #006135;
+            color: #ffffff;
+        }
+
+        .card:hover .icon,
+        .card:hover .card-text {
+            color: #ffffff;
+        }
+
+        .card {
+            transition: all 0.3s;
+        }
     </style>
 </head>
 
@@ -71,13 +106,93 @@
         </div>
     </nav>
 
+    <!-- SOBRE -->
     <div class="container mt-5 mb-5">
         <h1 class="text-center mt-5 mb-5">Bem Vindo ao Gestor do Grão</h1>
 
         <!-- PARA TESTE DA NAVBAR -->
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae a doloremque id, labore, illo nemo nam facere rerum cum dolores temporibus voluptas suscipit consequuntur eius! Dignissimos itaque accusantium nobis voluptate?</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
+                    <div class="icon">
+                        <i class="bi bi-info-circle"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">O que é o Gestor do Grão?</h4>
+                        <p class="card-text">Sistema web voltado para produtores de café, trazendo mais eficiência para o gerenciamento da produção.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
+                    <div class="icon">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Cadastro de Produções</h4>
+                        <p class="card-text">Permite que os produtores registrem e acompanhem cada etapa da sua produção.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
+                    <div class="icon">
+                        <i class="bi bi-bar-chart-line"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Comparação de Fornecedores</h4>
+                        <p class="card-text">Facilita a escolha dos melhores fornecedores com base em preços e qualidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
+                    <div class="icon">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Monitoramento do Progresso</h4>
+                        <p class="card-text">Ferramentas para acompanhar cada etapa da produção e garantir melhor controle.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
+                    <div class="icon">
+                        <i class="bi bi-clipboard-check"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Organização e Eficiência</h4>
+                        <p class="card-text"> Centraliza as informações, ajudando na tomada de decisões estratégicas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
+                    <div class="icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Benefícios para o Produtor</h4>
+                        <p class="card-text">Redução de desperdícios, aumento da qualidade e mais previsibilidade no mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- BOOTSTRAP 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>
