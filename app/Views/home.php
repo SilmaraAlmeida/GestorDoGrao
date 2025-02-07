@@ -13,8 +13,8 @@
     <!-- ICON -->
     <link rel="icon" href="<?= base_url('public/assets/images/cafe-favicon.png') ?>" type="image/x-icon">
 
-    <title>Gestor do Grão - Home</title>
-    <style>
+    <title><?= $titleHome ?></title>
+    <style> 
         /* NAVBAR */
 
         .navbar {
