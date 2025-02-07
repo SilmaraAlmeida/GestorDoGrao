@@ -8,7 +8,8 @@ A plataforma permitirá que os produtores cadastrem suas produções, comparem p
 
 ## Tecnologias que Serão Utilizadas
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Backend**: PHP, MySQL, CodeIgniter
+- **Backend**: PHP, MySQL
+- **Framework**: CodeIgniter
 
 ## Como Executar
 1. Clone o repositório:
