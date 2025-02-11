@@ -8,9 +8,12 @@ class HomeController extends BaseController
     {
         $data = [
             'titleHome' => 'Gestor do Grão - Home',
+            'faviconPath' => '/public/assets/images/cafe-favicon',
+            'cssPathCards' => '/public/assets/css/cards',
+            'cssPathNavbar' => '/public/assets/css/navbar',
         ];
 
-        helper('url');
+        helper(['url', 'img']);
 
         // $cssPath = [FCPATH . 'public/assets/css/cards.css'];
 

@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- ICON -->
-    <link rel="icon" href="<?= site_url('public/assets/images/cafe-favicon') ?> " type="image/x-icon">
+    <link rel="icon" href="<?= $faviconPath ?> " type="image/x-icon">
 
-    <link rel="stylesheet" href=" <?= site_url('public/assets/css/cards') ?> ">
-    <link rel="stylesheet" href=" <?= site_url('public/assets/css/navbar') ?> ">
-
+    <link rel="stylesheet" href=" <?= $cssPathCards ?> ">
+    <link rel="stylesheet" href=" <?= $cssPathNavbar ?> ">
 
     <title><?= $titleHome ?></title>
 
