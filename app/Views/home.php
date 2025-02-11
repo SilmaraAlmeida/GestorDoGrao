@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-<!-- BACKGROUND IMG -->
-<header>
-
-</header>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Gestor do Grão</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SERVIÇOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTATO</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-=======
 <style>
     /* NAVBAR */
 
@@ -122,7 +89,6 @@
     </div>
 </nav>
 
->>>>>>> testViews
 <!-- SOBRE -->
 <div class="container mt-5 mb-5">
     <h1 class="text-center mt-5 mb-5">Bem Vindo ao Gestor do Grão</h1>
@@ -206,8 +172,5 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 </div>
-=======
 </div>
->>>>>>> testViews

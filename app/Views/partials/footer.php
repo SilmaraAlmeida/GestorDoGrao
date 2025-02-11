@@ -9,19 +9,19 @@
             <div class="col">
                 <h4 class="pt-3">Menu</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-light">Link</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Link</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Link</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Home</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Sobre</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Serviços</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Contato</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h4 class="pt-3">Categorias</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-light">Link</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Link</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Link</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Cadastro de produções</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Comparação de Fornecedores</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Monitoramento do Progresso</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Organização e Eficiência</a></li>
                 </ul>
             </div>
             <div class="col-6 col-lg-3 text-lg-center">
