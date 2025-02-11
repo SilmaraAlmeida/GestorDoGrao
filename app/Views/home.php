@@ -56,6 +56,23 @@
     .card {
         transition: all 0.3s;
     }
+
+    /* FOOTER */
+    footer {
+        background-color: #343a40;
+        color: #f8f9fa;
+        padding: 1rem 0;
+    }
+
+    footer a {
+        color: #f8f9fa;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+    }
+
+    footer a:hover {
+        color: #006135;
+    }
 </style>
 
 <!-- BACKGROUND IMG -->

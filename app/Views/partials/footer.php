@@ -9,28 +9,28 @@
             <div class="col">
                 <h4 class="pt-3">Menu</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-light">Home</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Sobre</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Serviços</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Contato</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h4 class="pt-3">Categorias</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-decoration-none text-light">Cadastro de produções</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Comparação de Fornecedores</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Monitoramento do Progresso</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Organização e Eficiência</a></li>
+                    <li><a href="#">Cadastro de produções</a></li>
+                    <li><a href="#">Comparação de Fornecedores</a></li>
+                    <li><a href="#">Monitoramento do Progresso</a></li>
+                    <li><a href="#">Organização e Eficiência</a></li>
                 </ul>
             </div>
             <div class="col-6 col-lg-3 text-lg-center">
                 <h4 class="pt-3">Redes Sociais</h4>
                 <div>
-                    <a href="#" class="text-decoration-none text-light"><i class="bi bi-instagram fs-4 me-3"></i></a>
-                    <a href="#" class="text-decoration-none text-light"><i class="bi bi-youtube fs-4 me-3"></i></a>
-                    <a href="#" class="text-decoration-none text-light"><i class="bi bi-pinterest fs-4 me-3"></i></a>
-                    <a href="#" class="text-decoration-none text-light"><i class="bi bi-linkedin fs-4 me-3"></i></a>
+                    <a href="#"><i class="bi bi-instagram fs-4 me-3"></i></a>
+                    <a href="#"><i class="bi bi-youtube fs-4 me-3"></i></a>
+                    <a href="#"><i class="bi bi-pinterest fs-4 me-3"></i></a>
+                    <a href="#"><i class="bi bi-linkedin fs-4 me-3"></i></a>
                 </div>
             </div>
         </div>

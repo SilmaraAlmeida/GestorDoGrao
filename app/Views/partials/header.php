@@ -13,8 +13,8 @@
     <!-- ICON -->
     <link rel="icon" href="<?= $faviconPath ?> " type="image/x-icon">
 
-    <link rel="stylesheet" href=" <?= $cssPathCards ?> ">
-    <link rel="stylesheet" href=" <?= $cssPathNavbar ?> ">
+    <link rel="stylesheet" href=" <?= $cssPathCards ?? '' ?> ">
+    <link rel="stylesheet" href=" <?= $cssPathNavbar ?? '' ?> ">
 
     <title><?= $titleHome ?></title>
 
