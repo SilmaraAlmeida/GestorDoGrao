@@ -6,10 +6,14 @@ class HomeController extends BaseController
 {
     public function index(): string
     {
-        $dados = [
+        $data = [
             'titleHome' => 'Gestor do Grão - Home',
         ];
 
-        return view('home', $dados);
+        helper('url');
+
+        // $cssPath = [FCPATH . 'public/assets/css/cards.css'];
+
+        return view('partials/header', $data) . view('home') . view('partials/footer');
     }
 }

@@ -1,0 +1,24 @@
+
+/* CARDS */
+.card .icon {
+    color: #006135;
+    font-size: 2rem;
+}
+
+.card .card-text {
+    color: #666666;
+}
+
+.card:hover {
+    background-color: #006135;
+    color: #ffffff;
+}
+
+.card:hover .icon,
+.card:hover .card-text {
+    color: #ffffff;
+}
+
+.card {
+    transition: all 0.3s;
+}
