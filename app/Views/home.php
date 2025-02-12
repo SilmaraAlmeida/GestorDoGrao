@@ -57,6 +57,40 @@
         transition: all 0.3s;
     }
 
+    /* CONTATO */
+    .contact {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato {
+        width: 360px;
+        height: min-content;
+        padding: 20px;
+        border-radius: 12px;
+        border: 2px solid #006135;
+    }
+
+    .contato h2 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .contato form {
+        font-size: 18px;
+    }
+
+    .contato form .form-group {
+        margin-bottom: 12px;
+    }
+
+    .contato form input[type="submit"] {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
     /* FOOTER */
     footer {
         background-color: #343a40;
@@ -93,13 +127,13 @@
                     <a class="nav-link" href="#">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE</a>
+                    <a class="nav-link" href="#sobre">SOBRE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SERVIÇOS</a>
+                    <a class="nav-link" href="#servicos">SERVIÇOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTATO</a>
+                    <a class="nav-link" href="#contato">CONTATO</a>
                 </li>
             </ul>
         </div>
@@ -107,7 +141,7 @@
 </nav>
 
 <!-- SOBRE -->
-<div class="container mt-5 mb-5">
+<div class="container mt-5 mb-5" id="sobre">
     <h1 class="text-center mt-5 mb-5">Bem Vindo ao Gestor do Grão</h1>
 
     <!-- PARA TESTE DA NAVBAR -->
@@ -115,7 +149,7 @@
 </div>
 
 <!-- CARDS -->
-<div class="container py-5">
+<div class="container py-5" id="servicos">
     <div class="row">
         <div class="col-lg-4 col-sm-6">
             <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
@@ -187,6 +221,29 @@
                     <p class="card-text">Redução de desperdícios, aumento da qualidade e mais previsibilidade no mercado.</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- CONTATO -->
+    <div class="contact">
+        <div class="contato" id="contato">
+            <h2 class="text-center">Entre em contato!</h2>
+
+            <form class="needs-validation" action="<?= url_to('enviar_email') ?>" method="post">
+                <div class="form-group was-validated">
+                    <label class="form-label" for="email">E-mail</label>
+                    <input class="form-control" type="email" name="email" id="email" required>
+                    <div class="invalid-feedback">Por favor, insira seu email</div>
+                </div>
+
+                <div class="form-group was-validated">
+                    <label class="form-label" for="assunto">Assunto</label>
+                    <textarea class="form-control" name="assunto" id="assunto" required></textarea>
+                    <div class="invalid-feedback">Por favor, insira sua mensagem</div>
+                </div>
+
+                <input class="btn btn-success w-100" type="submit" value="Enviar mensagem">
+            </form>
         </div>
     </div>
 </div>
