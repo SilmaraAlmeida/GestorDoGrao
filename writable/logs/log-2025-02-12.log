@@ -13,3 +13,135 @@ in SYSTEMPATH\Helpers\url_helper.php on line 512.
 10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-12 12:47:59 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\Users\\silmar...', 1764)
+#1 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1764): mail('someone@example...', '=?UTF-8?Q?Email...', 'Testing the ema...', 'Date: Wed, 12 F...', '-f your@example...')
+#2 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\app\Controllers\EnviarEmailController.php(27): CodeIgniter\Email\Email->send()
+#5 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+#6 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+#7 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-02-12 12:47:59 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-02-12 12:47:59 --> 
+ERROR - 2025-02-12 12:50:28 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\Users\\silmar...', 1764)
+#1 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1764): mail('someone@example...', '=?UTF-8?Q?Email...', 'Testing the ema...', 'Date: Wed, 12 F...', '-f ana@gmail.co...')
+#2 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\app\Controllers\EnviarEmailController.php(27): CodeIgniter\Email\Email->send()
+#5 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+#6 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+#7 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-02-12 12:50:28 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-02-12 12:50:28 --> 
+ERROR - 2025-02-12 12:54:37 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php:1764
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\Users\\silmar...', 1764)
+#1 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1764): mail('silmaraalmeida2...', '=?UTF-8?Q?teste...', 'Testing the ema...', 'Date: Wed, 12 F...', '-f ana@gmail.co...')
+#2 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\app\Controllers\EnviarEmailController.php(25): CodeIgniter\Email\Email->send()
+#5 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+#6 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+#7 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-02-12 12:54:37 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-02-12 12:54:37 --> 
+CRITICAL - 2025-02-12 13:03:08 --> TypeError: fsockopen(): Argument #2 ($port) must be of type int, string given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1898.
+ 1 SYSTEMPATH\Email\Email.php(1898): fsockopen('sandbox.smtp.mailtrap.io', '2525', null, null, 5)
+ 2 SYSTEMPATH\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+ 3 SYSTEMPATH\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+ 4 SYSTEMPATH\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+ 5 APPPATH\Controllers\EnviarEmailController.php(36): CodeIgniter\Email\Email->send()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 13:09:21 --> TypeError: fsockopen(): Argument #2 ($port) must be of type int, string given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1898.
+ 1 SYSTEMPATH\Email\Email.php(1898): fsockopen('sandbox.smtp.mailtrap.io', '2525', null, null, 5)
+ 2 SYSTEMPATH\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+ 3 SYSTEMPATH\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+ 4 SYSTEMPATH\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+ 5 APPPATH\Controllers\EnviarEmailController.php(36): CodeIgniter\Email\Email->send()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 13:11:12 --> TypeError: fsockopen(): Argument #2 ($port) must be of type int, string given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1898.
+ 1 SYSTEMPATH\Email\Email.php(1898): fsockopen('sandbox.smtp.mailtrap.io', '2525', null, null, 5)
+ 2 SYSTEMPATH\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+ 3 SYSTEMPATH\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+ 4 SYSTEMPATH\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+ 5 APPPATH\Controllers\EnviarEmailController.php(36): CodeIgniter\Email\Email->send()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 13:15:50 --> TypeError: fsockopen(): Argument #2 ($port) must be of type int, string given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1898.
+ 1 SYSTEMPATH\Email\Email.php(1898): fsockopen('sandbox.smtp.mailtrap.io', '2525', null, null, 5)
+ 2 SYSTEMPATH\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+ 3 SYSTEMPATH\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+ 4 SYSTEMPATH\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+ 5 APPPATH\Controllers\EnviarEmailController.php(36): CodeIgniter\Email\Email->send()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 13:16:16 --> TypeError: fsockopen(): Argument #2 ($port) must be of type int, string given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1898.
+ 1 SYSTEMPATH\Email\Email.php(1898): fsockopen('sandbox.smtp.mailtrap.io', '2525', null, null, 5)
+ 2 SYSTEMPATH\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+ 3 SYSTEMPATH\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+ 4 SYSTEMPATH\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+ 5 APPPATH\Controllers\EnviarEmailController.php(36): CodeIgniter\Email\Email->send()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 13:18:23 --> TypeError: fsockopen(): Argument #2 ($port) must be of type int, string given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1898.
+ 1 SYSTEMPATH\Email\Email.php(1898): fsockopen('sandbox.smtp.mailtrap.io', '2525', null, null, 5)
+ 2 SYSTEMPATH\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+ 3 SYSTEMPATH\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+ 4 SYSTEMPATH\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+ 5 APPPATH\Controllers\EnviarEmailController.php(36): CodeIgniter\Email\Email->send()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

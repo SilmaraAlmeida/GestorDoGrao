@@ -8,4 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'HomeController::index');
 
 $routes->get('/enviarEmail', 'EnviarEmailController::index',    ['as' => 'enviar_email']);
-$routes->post('/enviarEmail', 'EnviarEmailController::index',   ['as' => 'enviar_email']);
+$routes->post('/enviarEmail', 'EnviarEmailController::store',   ['as' => 'enviar_email']);
