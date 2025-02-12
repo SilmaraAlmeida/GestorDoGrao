@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Olá <?= $name ?>, você recebeu um email de <?= $from ?></h2>
 
+    <p><?= $message ?></p>
 </body>
 </html>

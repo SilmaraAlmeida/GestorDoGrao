@@ -9,3 +9,6 @@ $routes->get('/', 'HomeController::index');
 
 $routes->get('/enviarEmail', 'EnviarEmailController::index',    ['as' => 'enviar_email']);
 $routes->post('/enviarEmail', 'EnviarEmailController::store',   ['as' => 'enviar_email']);
+
+$routes->get('/login', 'Login::index',         ['as' => 'login']);
+$routes->get('/cadastrar', 'Cadastrar::index', ['as' => 'cadastrar']);

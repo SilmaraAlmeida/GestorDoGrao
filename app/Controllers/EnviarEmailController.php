@@ -31,17 +31,18 @@ class EnviarEmailController extends BaseController
         $fromEmail = $this->request->getPost('email');
         $fromName = $this->request->getPost('nome');
         $subject = $this->request->getPost('assunto');
-        $message = $this->request->getPost('mensagem');
-
-        // if (empty($fromEmail) || empty($fromName) || empty($subject) || empty($message)) {
-        //     throw new \Exception('Todos os campos são obrigatórios');
-        // }
 
         $email->setFrom($fromEmail, $fromName);
         $email->setTo('gestordograo@gmail.com');
 
+        $template = view('emails/contato', [
+            'message' => $this->request->getPost('mensagem'),
+            'name' => 'Gestor do Grão',
+            'from' => $this->request->getPost('nome')
+        ]);
+
         $email->setSubject($subject);
-        $email->setMessage($message);
+        $email->setMessage($template);
 
         $send = $email->send();
 
