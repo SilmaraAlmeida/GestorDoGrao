@@ -9,6 +9,13 @@ class Login extends BaseController
 {
     public function index()
     {
-        return view('partials/login');
+        return view('partials/header') . view('partials/login');
+    }
+
+    public function verificarLogin()
+    {
+        var_dump('logado com sucesso');
+
+        // return view('painelDoProdutor');
     }
 }

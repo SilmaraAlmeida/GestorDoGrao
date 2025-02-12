@@ -15,7 +15,7 @@ header {
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -29,4 +29,40 @@ header {
 .navbar-light .navbar-brand {
     color: #fff;
     font-size: 30px;
+}
+.nav-item {
+    margin-left: 10px;
+}
+
+/* Estilos para o link de login */
+.navbar-light .navbar-nav .login-link {
+    background: transparent;
+    border: 1px solid #006135;
+    padding: 2px 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.navbar-light .navbar-nav .login-link:hover {
+    background: #006135;
+    color: white;
+}
+
+/* Estilos para o botão de cadastro */
+.navbar-light .navbar-nav .register-btn {
+    background: #006135;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.navbar-light .navbar-nav .register-btn .register-link {
+    color: white;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .register-btn:hover {
+    background: #004d28;
 }

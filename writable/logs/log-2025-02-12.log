@@ -198,3 +198,607 @@ in APPPATH\Views\emails\contato.php on line 9.
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2025-02-12 14:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-12 15:59:20 --> ErrorException: Undefined variable $faviconPath
+[Method: GET, Route: cadastrar]
+in APPPATH\Views\partials\header.php on line 14.
+ 1 APPPATH\Views\partials\header.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $faviconPath', 'C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\header.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/header', [], true)
+ 5 APPPATH\Controllers\Cadastrar.php(12): view('partials/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 15:59:51 --> ErrorException: Undefined variable $titleHome
+[Method: GET, Route: cadastrar]
+in APPPATH\Views\partials\header.php on line 19.
+ 1 APPPATH\Views\partials\header.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titleHome', 'C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\header.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/header', [], true)
+ 5 APPPATH\Controllers\Cadastrar.php(12): view('partials/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:10:00 --> TypeError: preg_match(): Argument #2 ($subject) must be of type string, null given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 498.
+ 1 SYSTEMPATH\Email\Email.php(498): preg_match('/[\\200-\\377]/', null)
+ 2 APPPATH\Controllers\EnviarEmailController.php(35): CodeIgniter\Email\Email->setFrom('ass@sas', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:10:34 --> TypeError: preg_match(): Argument #2 ($subject) must be of type string, null given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 498.
+ 1 SYSTEMPATH\Email\Email.php(498): preg_match('/[\\200-\\377]/', null)
+ 2 APPPATH\Controllers\EnviarEmailController.php(35): CodeIgniter\Email\Email->setFrom('ass@sas', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:12:48 --> TypeError: preg_match(): Argument #2 ($subject) must be of type string, null given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 498.
+ 1 SYSTEMPATH\Email\Email.php(498): preg_match('/[\\200-\\377]/', null)
+ 2 APPPATH\Controllers\EnviarEmailController.php(35): CodeIgniter\Email\Email->setFrom('ana@gmail.com', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:13:07 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(38): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:14:00 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, null given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1491.
+ 1 SYSTEMPATH\Email\Email.php(1491): str_replace([...], '', null)
+ 2 SYSTEMPATH\Email\Email.php(634): CodeIgniter\Email\Email->prepQEncoding(null)
+ 3 APPPATH\Controllers\EnviarEmailController.php(44): CodeIgniter\Email\Email->setSubject(null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:14:49 --> TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, null given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1491.
+ 1 SYSTEMPATH\Email\Email.php(1491): str_replace([...], '', null)
+ 2 SYSTEMPATH\Email\Email.php(634): CodeIgniter\Email\Email->prepQEncoding(null)
+ 3 APPPATH\Controllers\EnviarEmailController.php(44): CodeIgniter\Email\Email->setSubject(null)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:16:12 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:16:17 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:16:33 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:17:02 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:17:07 --> TypeError: preg_match(): Argument #2 ($subject) must be of type string, null given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 498.
+ 1 SYSTEMPATH\Email\Email.php(498): preg_match('/[\\200-\\377]/', null)
+ 2 APPPATH\Controllers\EnviarEmailController.php(35): CodeIgniter\Email\Email->setFrom('ana@gmail.com', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:17:11 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:17:45 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:17:46 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:17:46 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:17:47 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:18:38 --> TypeError: preg_match(): Argument #2 ($subject) must be of type string, null given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 498.
+ 1 SYSTEMPATH\Email\Email.php(498): preg_match('/[\\200-\\377]/', null)
+ 2 APPPATH\Controllers\EnviarEmailController.php(35): CodeIgniter\Email\Email->setFrom('ana@gmail.com', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:18:43 --> CodeIgniter\Router\Exceptions\RouterException: The route for "cadastrar_store" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cadastrar_store')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('cadastrar_store')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:19:02 --> CodeIgniter\Router\Exceptions\RouterException: The route for "" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:19:03 --> CodeIgniter\Router\Exceptions\RouterException: The route for "" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:19:03 --> CodeIgniter\Router\Exceptions\RouterException: The route for "" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:19:03 --> CodeIgniter\Router\Exceptions\RouterException: The route for "" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:19:04 --> CodeIgniter\Router\Exceptions\RouterException: The route for "" cannot be found.
+[Method: GET, Route: cadastrar]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('')
+ 2 APPPATH\Views\partials\cadastro.php(40): url_to('')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\cadastro.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/cadastro', [], true)
+ 6 APPPATH\Controllers\Cadastrar.php(12): view('partials/cadastro')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:22:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+[Method: POST, Route: cadastrarDB]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Cadastrar.php(19): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:24:27 --> TypeError: preg_match(): Argument #2 ($subject) must be of type string, null given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 498.
+ 1 SYSTEMPATH\Email\Email.php(498): preg_match('/[\\200-\\377]/', null)
+ 2 APPPATH\Controllers\EnviarEmailController.php(35): CodeIgniter\Email\Email->setFrom('ana@gmail.com', null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 16:28:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "painelDoProdutor.php"
+[Method: POST, Route: loginVrf]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('painelDoProdutor.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('painelDoProdutor', [], true)
+ 3 APPPATH\Controllers\Login.php(19): view('painelDoProdutor')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->verificarLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-02-12 17:17:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\app\Controllers\Cadastrar.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+#9 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+#10 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#5 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\app\Controllers\Cadastrar.php(25): CodeIgniter\Model->insert(Array)
+#7 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+#8 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+#9 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-02-12 17:17:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: POST, Route: cadastrarDB]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (:nome:, :email:, :senha:)', [...], false)
+ 3 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Cadastrar.php(25): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-12 17:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-12 17:24:58 --> mysqli_sql_exception: Duplicate entry 'paulo@gmail.com' for key 'users.email' in C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\app\Controllers\Cadastrar.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+#9 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+#10 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-02-12 17:24:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'paulo@gmail.com' for key 'users.email'
+[Method: POST, Route: cadastrarDB]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (:nome:, :email:, :senha:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Cadastrar.php(26): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 17:24:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'paulo@gmail.com' for key 'users.email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'Paulo\', \'paulo@gmail.com\', \'123\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'Paulo\', \'paulo@gmail.com\', \'123\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (:nome:, :email:, :senha:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Cadastrar.php(26): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 17:24:58 --> [Caused by] mysqli_sql_exception: Duplicate entry 'paulo@gmail.com' for key 'users.email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'Paulo\', \'paulo@gmail.com\', \'123\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'Paulo\', \'paulo@gmail.com\', \'123\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'Paulo\', \'paulo@gmail.com\', \'123\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (:nome:, :email:, :senha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Cadastrar.php(26): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-12 17:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-02-12 17:25:23 --> mysqli_sql_exception: Duplicate entry 'carolina@gmail.com' for key 'users.email' in C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\app\Controllers\Cadastrar.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+#9 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+#10 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\silmara.almeida\Documents\GitHub\GestorDoGrao\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-02-12 17:25:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'carolina@gmail.com' for key 'users.email'
+[Method: POST, Route: cadastrarDB]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (:nome:, :email:, :senha:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Cadastrar.php(26): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 17:25:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'carolina@gmail.com' for key 'users.email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'carolina\', \'carolina@gmail.com\', \'123\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'carolina\', \'carolina@gmail.com\', \'123\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (:nome:, :email:, :senha:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Cadastrar.php(26): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 17:25:23 --> [Caused by] mysqli_sql_exception: Duplicate entry 'carolina@gmail.com' for key 'users.email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'carolina\', \'carolina@gmail.com\', \'123\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'carolina\', \'carolina@gmail.com\', \'123\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (\'carolina\', \'carolina@gmail.com\', \'123\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nome`, `email`, `senha`) VALUES (:nome:, :email:, :senha:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Cadastrar.php(26): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cadastrar->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cadastrar))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-12 17:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
