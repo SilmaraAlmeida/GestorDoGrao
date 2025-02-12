@@ -145,3 +145,41 @@ in SYSTEMPATH\Email\Email.php on line 1898.
  9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 13:35:17 --> Exception: Todos os campos são obrigatórios
+[Method: POST, Route: enviarEmail]
+in APPPATH\Controllers\EnviarEmailController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 13:35:58 --> TypeError: fsockopen(): Argument #2 ($port) must be of type int, string given
+[Method: POST, Route: enviarEmail]
+in SYSTEMPATH\Email\Email.php on line 1898.
+ 1 SYSTEMPATH\Email\Email.php(1898): fsockopen('sandbox.smtp.mailtrap.io', '2525', null, null, 5)
+ 2 SYSTEMPATH\Email\Email.php(1811): CodeIgniter\Email\Email->SMTPConnect()
+ 3 SYSTEMPATH\Email\Email.php(1696): CodeIgniter\Email\Email->sendWithSmtp()
+ 4 SYSTEMPATH\Email\Email.php(1591): CodeIgniter\Email\Email->spoolEmail()
+ 5 APPPATH\Controllers\EnviarEmailController.php(45): CodeIgniter\Email\Email->send()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-12 13:45:07 --> ErrorException: Undefined variable $name
+[Method: POST, Route: enviarEmail]
+in APPPATH\Views\emails\contato.php on line 9.
+ 1 APPPATH\Views\emails\contato.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\emails\\contato.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\emails\\contato.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('emails/contato', [], true)
+ 5 APPPATH\Controllers\EnviarEmailController.php(43): view('emails/contato')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EnviarEmailController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnviarEmailController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-12 13:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

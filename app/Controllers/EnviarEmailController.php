@@ -14,31 +14,41 @@ class EnviarEmailController extends BaseController
 
     public function store()
     {
-        // $email = service('email');
+        $email = service('email');
 
-        // $config = [
-        //     'protocol' => '',
-        //     'SMTPHost' => '',
-        //     'SMTPUser' => '',
-        //     'SMTPPass' => '',
-        //     'SMTPPort' => '',
-        //     'wordWrap' => true,
-        // ];
+        $config = [
+            'protocol' => 'smtp',
+            'SMTPHost' => 'sandbox.smtp.mailtrap.io',
+            'SMTPUser' => '0789666dfcef49',
+            'SMTPPass' => 'e10595964dc80d',
+            'SMTPPort' => 2525,
+            'wordWrap' => true,
+            'mailType' => 'html',
+        ];
 
-        // $email->initialize($config);
+        $email->initialize($config);
 
-        // $email->setFrom($this->request->getPost('email'), $this->request->getPost('nome'));
-        // $email->setTo('');
+        $fromEmail = $this->request->getPost('email');
+        $fromName = $this->request->getPost('nome');
+        $subject = $this->request->getPost('assunto');
+        $message = $this->request->getPost('mensagem');
 
-        // $email->setSubject($this->request->getPost('assunto'));
-        // $email->setMessage($this->request->getPost('mensagem'));
-
-        // $send = $email->send();
-
-        // if (!$send) {
-        //     var_dump($email->printDebugger());
+        // if (empty($fromEmail) || empty($fromName) || empty($subject) || empty($message)) {
+        //     throw new \Exception('Todos os campos são obrigatórios');
         // }
 
-        var_dump('email enviado pelo post');
+        $email->setFrom($fromEmail, $fromName);
+        $email->setTo('gestordograo@gmail.com');
+
+        $email->setSubject($subject);
+        $email->setMessage($message);
+
+        $send = $email->send();
+
+        if (!$send) {
+            var_dump($email->printDebugger());
+        }
+
+        return redirect()->back();
     }
 }
