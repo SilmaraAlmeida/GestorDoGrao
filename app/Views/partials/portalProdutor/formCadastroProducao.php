@@ -98,7 +98,15 @@
                 <div class="column">
                     <div class="form-group">
                         <label class="form-label" for="variedade_cafe">Variedade do café <span>*</span></label>
-                        <input class="form-control" type="text" name="variedade_cafe" id="variedade_cafe" required>
+                        <select class="form-control" name="mercado_destino" id="mercado_destino" required>
+                            <option value="">Selecionar</option>
+                            <option value="interno">Arábica</option>
+                            <option value="conilon">Conilon</option>
+                            <option value="liberica">Libérica</option>
+                            <option value="excelsa">Excelsa</option>
+                            <option value="catucai">Catucaí</option>
+                            <option value="mundo novo">Mundo Novo</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
@@ -118,7 +126,11 @@
 
                     <div class="form-group">
                         <label class="form-label" for="mercado_destino">O café é destinado ao mercado interno ou externo? <span>*</span></label>
-                        <input class="form-control" type="text" name="mercado_destino" id="mercado_destino" required>
+                        <select class="form-control" name="mercado_destino" id="mercado_destino" required>
+                            <option value="">Selecionar</option>
+                            <option value="interno">Interno</option>
+                            <option value="externo">Externo</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
