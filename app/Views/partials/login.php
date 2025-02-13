@@ -38,17 +38,21 @@
         <a href="<?= url_to('/') ?>">Voltar</a>
         <h2 class="text-center">Fazer Login</h2>
 
+        <?php if (session()->has('error')): ?>
+            <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
+        <?php endif ?>
+
         <form class="needs-validation" action="<?= url_to('verificar_login') ?>" method="post">
             <div class="form-group was-validated">
                 <label class="form-label" for="email">E-mail</label>
                 <input class="form-control" type="email" name="email" id="email" required>
-                <div class="invalid-feedback">Por favor, insira seu email</div>
+                <!-- <div class="invalid-feedback">Por favor, insira seu email</div> -->
             </div>
 
             <div class="form-group was-validated">
                 <label class="form-label" for="senha">Senha</label>
                 <input class="form-control" type="password" name="senha" id="senha" required>
-                <div class="invalid-feedback">Por favor, insira a senha</div>
+                <!-- <div class="invalid-feedback">Por favor, insira a senha</div> -->
             </div>
 
             <input class="btn btn-success w-100" type="submit" value="Enviar mensagem">

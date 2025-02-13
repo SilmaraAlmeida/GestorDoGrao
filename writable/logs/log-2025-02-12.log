@@ -802,3 +802,5 @@ DEBUG - 2025-02-12 17:42:55 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-02-12 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-02-12 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-02-12 17:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-12 17:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -12,6 +12,9 @@ $routes->post('/enviarEmail', 'EnviarEmailController::store',   ['as' => 'enviar
 
 $routes->get('/login', 'Login::index',              ['as' => 'login']);
 $routes->post('/loginVrf', 'Login::verificarLogin', ['as' => 'verificar_login']);
+$routes->get('/loginDestroy', 'Login::destroy', ['as' => 'login_destroy']);
 
 $routes->get('/cadastrar', 'Cadastrar::index',    ['as' => 'cadastrar']);
 $routes->post('/cadastrarDB', 'Cadastrar::store', ['as' => 'cadastrar_store']);
+
+$routes->get('/portalProdutor', 'PortalProdutor::index', ['as' => 'portal_produtor']);
