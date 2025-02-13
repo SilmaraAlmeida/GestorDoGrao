@@ -15,7 +15,6 @@ class Cadastrar extends BaseController
 
     public function store()
     {
-
         $user = new User();
         $inserted = $user->insert($this->request->getPost());
 

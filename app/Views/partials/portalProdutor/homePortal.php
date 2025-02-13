@@ -9,6 +9,8 @@
     <?php if (session()->has('user')): ?>
         <h3>Olá, <?php echo session()->get('user')->nome ?></h3>
         <a href="<?= url_to('login_destroy') ?>">Logout</a>
+
+        <a href="<?= url_to('cadastrar_producao') ?>">Cadastrar Produção</a>
     <?php endif ?>
 
     <h2>Portal</h2>
