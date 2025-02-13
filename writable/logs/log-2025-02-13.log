@@ -65,3 +65,265 @@ DEBUG - 2025-02-13 11:45:49 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-02-13 11:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-02-13 11:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-02-13 11:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-13 12:27:22 --> CodeIgniter\Router\Exceptions\RouterException: The route for "/" cannot be found.
+[Method: GET, Route: login]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('/')
+ 2 APPPATH\Views\partials\login.php(38): url_to('/')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/login', [], true)
+ 6 APPPATH\Controllers\Login.php(13): view('partials/login')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:27:36 --> CodeIgniter\Router\Exceptions\RouterException: The route for "/" cannot be found.
+[Method: GET, Route: login]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('/')
+ 2 APPPATH\Views\partials\login.php(38): url_to('/')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/login', [], true)
+ 6 APPPATH\Controllers\Login.php(13): view('partials/login')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:27:36 --> CodeIgniter\Router\Exceptions\RouterException: The route for "/" cannot be found.
+[Method: GET, Route: login]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('/')
+ 2 APPPATH\Views\partials\login.php(38): url_to('/')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/login', [], true)
+ 6 APPPATH\Controllers\Login.php(13): view('partials/login')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:27:39 --> CodeIgniter\Router\Exceptions\RouterException: The route for "/" cannot be found.
+[Method: GET, Route: login]
+in SYSTEMPATH\Helpers\url_helper.php on line 512.
+ 1 SYSTEMPATH\Helpers\url_helper.php(512): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('/')
+ 2 APPPATH\Views\partials\login.php(38): url_to('/')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\Users\\silmara.almeida\\Documents\\GitHub\\GestorDoGrao\\app\\Views\\partials\\login.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 5 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partials/login', [], true)
+ 6 APPPATH\Controllers\Login.php(13): view('partials/login')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-13 12:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-13 12:31:00 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:31:56 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:31:57 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:31:57 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:31:57 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:31:57 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:31:57 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:31:58 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:32:17 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:32:17 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:32:17 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:33:33 --> ErrorException: Class App\Controllers\PortalProdutor contains 2 abstract methods and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Filters\FilterInterface::before, CodeIgniter\Filters\FilterInterface::after)
+[Method: GET, Route: portalProdutor]
+in APPPATH\Controllers\PortalProdutor.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-02-13 12:33:34 --> ErrorException: Class App\Controllers\PortalProdutor contains 2 abstract methods and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Filters\FilterInterface::before, CodeIgniter\Filters\FilterInterface::after)
+[Method: GET, Route: portalProdutor]
+in APPPATH\Controllers\PortalProdutor.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-02-13 12:33:49 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-02-13 12:33:50 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Controllers\PortalProdutor" must implement CodeIgniter\Filters\FilterInterface.
+[Method: GET, Route: portalProdutor]
+in SYSTEMPATH\Filters\Filters.php on line 302.
+ 1 SYSTEMPATH\Filters\Filters.php(302): CodeIgniter\Filters\Exceptions\FilterException::forIncorrectInterface('App\\Controllers\\PortalProdutor')
+ 2 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Controllers\\PortalProdutor')
+ 3 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 4 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('portalProdutor', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-02-13 12:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-13 12:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
