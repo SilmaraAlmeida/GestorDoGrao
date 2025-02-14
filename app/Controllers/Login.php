@@ -10,7 +10,8 @@ class Login extends BaseController
 {
     public function index()
     {
-        return view('partials/header') . view('partials/login');
+        // return view('partials/header') . view('partials/login');
+        return view('partials/header') . view('loginInicial/loginInicial');
     }
 
     public function verificarLogin()

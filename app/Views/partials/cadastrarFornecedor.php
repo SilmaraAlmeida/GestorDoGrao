@@ -36,7 +36,7 @@
 <div class="contact">
     <div class="contato" id="contato">
         <a href="<?= url_to('login') ?>">Voltar</a>
-        <h2 class="text-center">Cadastro do Produtor</h2>
+        <h2 class="text-center">Cadastro do Fornecedor</h2>
         <?php if(session()->has('error')): ?>
             <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
         <?php endif ?>
