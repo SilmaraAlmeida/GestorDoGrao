@@ -68,7 +68,7 @@
 
             <p>Já tem uma conta? <a href="<?= url_to('form_login_fornecedor') ?>">fazer login</a></p>
 
-            <input class="btn btn-success w-100" type="submit" value="Enviar mensagem">
+            <input class="btn btn-success w-100" type="submit" value="Cadastrar">
         </form>
     </div>
 </div>

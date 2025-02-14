@@ -53,6 +53,8 @@
                 <input class="form-control" type="password" name="senha" id="senha" required>
             </div>
 
+            <p>Não tem uma conta? <a href="<?= url_to('cadastrar') ?>">Criar Conta</a></p>
+
             <input class="btn btn-success w-100" type="submit" value="Login">
         </form>
     </div>
