@@ -16,7 +16,7 @@
                 </ul>
             </div>
             <div class="col">
-                <h4 class="pt-3">Categorias</h4>
+                <h4 class="pt-3">Serviços</h4>
                 <ul class="list-unstyled">
                     <li><a href="#">Cadastro de produções</a></li>
                     <li><a href="#">Comparação de Fornecedores</a></li>

@@ -171,7 +171,7 @@
                     <a class="nav-link" href="#contato">CONTATO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link login-link" href="<?= url_to('login') ?>">LOGIN</a>
+                    <a class="nav-link login-link" href="<?= url_to('form_login') ?>">LOGIN</a>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="register-btn"><a class="nav-link register-link" href="<?= url_to('cadastrar') ?>">CADASTRAR</a></button>

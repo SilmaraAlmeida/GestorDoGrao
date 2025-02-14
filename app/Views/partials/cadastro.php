@@ -35,7 +35,7 @@
 </style>
 <div class="contact">
     <div class="contato" id="contato">
-        <a href="<?= url_to('login') ?>">Voltar</a>
+        <a href="<?= url_to('/') ?>">Voltar</a>
 
         <h2 class="text-center">Cadastro do Produtor</h2>
         <?php if(session()->has('error')): ?>
