@@ -10,15 +10,36 @@ $routes->get('/', 'HomeController::index');
 $routes->get('/enviarEmail', 'EnviarEmailController::index',    ['as' => 'enviar_email']);
 $routes->post('/enviarEmail', 'EnviarEmailController::store',   ['as' => 'enviar_email']);
 
+// LOGIN  E CADASTRO DE PRODUTORES
 $routes->get('/login', 'Login::index',              ['as' => 'login']);
+$routes->get('/formlogin', 'Login::formLogin',              ['as' => 'form_login']);
 $routes->post('/loginVrf', 'Login::verificarLogin', ['as' => 'verificar_login']);
 $routes->get('/loginDestroy', 'Login::destroy', ['as' => 'login_destroy']);
 
 $routes->get('/cadastrar', 'Cadastrar::index',    ['as' => 'cadastrar']);
 $routes->post('/cadastrarDB', 'Cadastrar::store', ['as' => 'cadastrar_store']);
 
+// CHAMA O PORTAL DO PRODUTOR
 $routes->get('/portalProdutor', 'PortalProdutor::index', ['as' => 'portal_produtor']);
 
+// OPÇÕES DA NAVBAR DO PRODUTOR
 $routes->get('/cadastrarProducao', 'CadastrarProducao::index', ['as' => 'cadastrar_producao']);
-$routes->get('/cadastrarProducaoDB', 'CadastrarProducao::store', ['as' => 'cadastrar_producao_store']);
+$routes->post('/cadastrarProducaoDB', 'CadastrarProducao::store', ['as' => 'cadastrar_producao_store']);
+
+$routes->get('/compararFornecedores', 'CompararFornecedores::index', ['as' => 'comparar_fornecedores']);
+
+$routes->get('/monitorarProgresso', 'MonitorarProgresso::index', ['as' => 'monitorar_progresso']);
+
+// LOGIN E CADASTRO DOS FORNECEDORES
+$routes->get('/formLoginFornecedor', 'loginFornecedor::formLogin',     ['as' => 'form_login_fornecedor']);
+$routes->post('/loginFornecedorVrf', 'loginFornecedor::verificarLogin', ['as' => 'verificar_login_fornecedor']);
+
+$routes->get('/cadastrarFornecedor', 'CadastrarFornecedor::index',    ['as' => 'cadastrar_fornecedor']);
+$routes->post('/cadastrarFornecedorDB', 'CadastrarFornecedor::store', ['as' => 'cadastrar_fornecedor_store']);
+
+// CHAMA O PORTAL DO FORNECEDOR
+$routes->get('/portalFornecedor', 'PortalFornecedor::index', ['as' => 'portal_fornecedor']);
+
+// OPÇÕES DA NAVBAR DO FORNECEDOR
+$routes->get('/cadastrarProducao', 'CadastrarProducao::index', ['as' => 'cadastrar_producao']);
 $routes->post('/cadastrarProducaoDB', 'CadastrarProducao::store', ['as' => 'cadastrar_producao_store']);
