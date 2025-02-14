@@ -3,10 +3,10 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\User;
+use App\Models\Fornecedor;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Login extends BaseController
+class LoginFornecedor extends BaseController
 {
     public function index()
     {
@@ -15,26 +15,26 @@ class Login extends BaseController
 
     public function formLogin()
     {
-        return view('partials/header') . view('partials/formLoginProdutor');
+        return view('partials/header') . view('partials/formLoginFornecedor');
     }
 
     public function verificarLogin()
     {
-        $user = new User();
-        $userFound = $user->where('email', $this->request->getPost('email'))->first();
+        $fornecedor = new Fornecedor();
+        $fornecedorEncontrado = $fornecedor->where('email_empresa', $this->request->getPost('email'))->first();
 
-        if (!$userFound) {
+        if (!$fornecedorEncontrado) {
             return redirect()->route('login')->with('error', 'Email ou senha incorreta');
         }
 
-        if (!password_verify($this->request->getPost('senha'), $userFound->senha)) {
+        if (!password_verify($this->request->getPost('senha'), $fornecedorEncontrado->senha)) {
             return redirect()->route('login')->with('error', 'Email ou senha incorreta');
         }
 
-        unset($userFound->password);
-        session()->set('user', $userFound);
+        unset($fornecedorEncontrado->password);
+        session()->set('fornecedor', $fornecedorEncontrado);
 
-        return redirect()->route('portal_produtor');
+        return redirect()->route('portal_fornecedor');
     }
 
     public function destroy()
