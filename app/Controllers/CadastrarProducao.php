@@ -10,7 +10,7 @@ class CadastrarProducao extends BaseController
 {
     public function index()
     {
-        return view('partials/header') . view('portalProdutor/formCadastroProducao.php');
+        return view('partials/header') . view('portalProdutor/formCadastroProducao');
     }
 
     public function store()

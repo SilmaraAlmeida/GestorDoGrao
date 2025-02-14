@@ -32,10 +32,15 @@
         font-size: 20px;
         margin-bottom: 15px;
     }
+
+    i {
+        color: #000;
+        font-size: 25px;
+    }
 </style>
+<a href="<?= url_to('/') ?>"><i class="bi bi-arrow-left"></i></a>
 <div class="contact">
     <div class="contato" id="contato">
-        <a href="<?= url_to('/') ?>">Voltar</a>
 
         <h2 class="text-center">Cadastro do Produtor</h2>
         <?php if(session()->has('error')): ?>

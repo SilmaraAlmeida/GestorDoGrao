@@ -49,10 +49,15 @@
     span {
         color: red;
     }
+
+    i {
+        color: #000;
+        font-size: 25px;
+    }
 </style>
 <div class="contact">
     <div class="contato" id="contato">
-        <a href="<?= url_to('portal_produtor') ?>">Voltar</a>
+        <a href="<?= url_to('portal_produtor') ?>"><i class="bi bi-arrow-left"></i></a>
         <h2 class="text-center">Cadastro de Produção</h2>
         <?php if (session()->has('error')): ?>
             <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
