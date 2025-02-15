@@ -10,13 +10,13 @@
                     <a class="nav-link" href="<?= url_to('portal_produtor') ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link login-link" href="<?= url_to('cadastrar_producao') ?>">Cadastrar Produção</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="<?= url_to('comparar_fornecedores') ?>">Comparar fornecedores</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?= url_to('monitorar_progresso') ?>">Monitorar Progresso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link login-link" href="<?= url_to('cadastrar_producao') ?>">Cadastrar Produção</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link login-link" href="<?= url_to('login_destroy') ?>">Logout</a>
