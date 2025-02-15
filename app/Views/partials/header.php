@@ -13,8 +13,12 @@
     <!-- ICON -->
     <link rel="icon" href="<?= base_url('uploads/cafe-favicon.png') ?>" type="image/x-icon">
 
-    <link rel="stylesheet" href=" <?= $cssPathCards ?? '' ?> ">
-    <link rel="stylesheet" href=" <?= $cssPathNavbar ?? '' ?> ">
+    <!-- CSS -->
+    <link rel="stylesheet" href=" <?= base_url('css/navbar.css') ?> ">
+    <link rel="stylesheet" href=" <?= base_url('css/about.css') ?> ">
+    <link rel="stylesheet" href=" <?= base_url('css/cards.css') ?> ">
+    <link rel="stylesheet" href=" <?= base_url('css/contact.css') ?> ">
+    <link rel="stylesheet" href=" <?= base_url('css/footer.css') ?> ">
 
     <title><?= $titleHome ?? '' ?></title>
 

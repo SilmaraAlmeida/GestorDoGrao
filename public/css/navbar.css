@@ -1,5 +1,3 @@
-/* NAVBAR */
-
 .navbar {
     background-color: transparent !important;
     background-color: rgba(0, 0, 0, 0.5) !important;
@@ -7,10 +5,50 @@
 }
 
 header {
-    background-image: url("https://coopercam.com.br/wp-content/uploads/2022/06/cafe-2-1920x1080.jpg");
+    background-image: url("https://yucoffee.com.br/cdn/shop/articles/Banner_blog_2_936a8233-eca1-474a-8ce1-57fa4c46f848.png?v=1734637169&width=1100");
     height: 100vh;
     min-height: 400px;
     background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.header-overlay {
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.header-overlay h2 {
+    font-size: 2rem;
+}
+
+.header-overlay p {
+    font-size: 1.5rem;
+}
+
+.saiba-mais {
+    background: transparent;
+    border: 1px solid #006135;
+    padding: 6px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+
+.saiba-mais a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.saiba-mais:hover {
+    background: #006135;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -30,11 +68,12 @@ header {
     color: #fff;
     font-size: 30px;
 }
+
 .nav-item {
     margin-left: 10px;
 }
 
-/* Estilos para o link de login */
+/* Estilos pro link de login */
 .navbar-light .navbar-nav .login-link {
     background: transparent;
     border: 1px solid #006135;
@@ -49,20 +88,21 @@ header {
     color: white;
 }
 
-/* Estilos para o botão de cadastro */
+/* Estilos pro botão de cadastro */
 .navbar-light .navbar-nav .register-btn {
     background: #006135;
     border: none;
     border-radius: 10px;
     margin-top: 5px;
+    transition: all 0.3s;
+}
+
+.navbar-light .navbar-nav .register-btn:hover {
+    background: #004d28;
 }
 
 .navbar-light .navbar-nav .register-btn .register-link {
     color: white;
     padding: 2px 5px;
     text-decoration: none;
-}
-
-.navbar-light .navbar-nav .register-btn:hover {
-    background: #004d28;
 }
