@@ -1,66 +1,32 @@
-<style>
-    /* CONTATO */
-    .contact {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+<head>
+    <link rel="stylesheet" href="<?= base_url('css/login-cadastro.css') ?>">
+</head>
+<header>
+    <div class="contact">
+        <div class="contato">
+            <h2>Login do Produtor</h2>
 
-    .contato {
-        width: 360px;
-        height: min-content;
-        padding: 20px;
-        border-radius: 12px;
-        border: 2px solid #006135;
-    }
+            <?php if (session()->has('error')): ?>
+                <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
+            <?php endif ?>
 
-    .contato h2 {
-        font-size: 36px;
-        margin-bottom: 25px;
-    }
+            <form action="<?= url_to('verificar_login') ?>" method="post">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input class="form-control" type="email" name="email" id="email" required>
+                </div>
 
-    .contato form {
-        font-size: 18px;
-    }
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input class="form-control" type="password" name="senha" id="senha" required>
+                </div>
 
-    .contato form .form-group {
-        margin-bottom: 12px;
-    }
+                <p>Não tem uma conta? <a href="<?= url_to('cadastrar') ?>">Criar Conta</a></p>
 
-    .contato form input[type="submit"] {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
+                <input type="submit" value="Login">
+            </form>
 
-    i {
-        color: #000;
-        font-size: 25px;
-    }
-</style>
-<a href="<?= url_to('/') ?>"><i class="bi bi-arrow-left"></i></a>
-<div class="contact">
-    <div class="contato" id="contato">
-        <h2 class="text-center">Login do Produtor</h2>
-
-        <?php if (session()->has('error')): ?>
-            <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
-        <?php endif ?>
-
-        <form class="needs-validation" action="<?= url_to('verificar_login') ?>" method="post">
-            <div class="form-group was-validated">
-                <label class="form-label" for="email">E-mail</label>
-                <input class="form-control" type="email" name="email" id="email" required>
-            </div>
-
-            <div class="form-group was-validated">
-                <label class="form-label" for="senha">Senha</label>
-                <input class="form-control" type="password" name="senha" id="senha" required>
-            </div>
-
-            <p>Não tem uma conta? <a href="<?= url_to('cadastrar') ?>">Criar Conta</a></p>
-
-            <input class="btn btn-success w-100" type="submit" value="Login">
-        </form>
+            <a href="<?= url_to('/') ?>"><i class="bi bi-arrow-left"></i></a>
+        </div>
     </div>
-</div>
+</header>

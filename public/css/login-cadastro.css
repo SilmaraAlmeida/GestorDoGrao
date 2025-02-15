@@ -1,0 +1,83 @@
+/* Fundo do header */
+header {
+    background-image: url("https://thumbs.dreamstime.com/b/sol-matinal-sobe-acima-de-uma-grande-planta%C3%A7%C3%A3o-caf%C3%A9-envolta-em-neblina-criando-paisagem-serena-rural-nas-terras-altas-320244132.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Área de contato */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Caixa de login */
+.contato {
+    width: 360px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contato form {
+    font-size: 16px;
+    color: #fff;
+}
+
+.contato .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contato input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+}
+
+.contato input[type="submit"] {
+    background: #006135;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.contato input[type="submit"]:hover {
+    background: #004d29;
+}
+
+.contato p a {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.contato p a:hover {
+    text-decoration: underline;
+}
+
+.contato a i {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 10px;
+    display: inline-block;
+}
