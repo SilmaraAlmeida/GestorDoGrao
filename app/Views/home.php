@@ -202,7 +202,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Gestor do Grão</a>
+        <img src="<?= base_url('uploads/home-cafe-logo.png') ?>" class="img-fluid rounded mt-2 mb-2" style="width: 200px;" alt="Imagem de café">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
