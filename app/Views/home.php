@@ -8,10 +8,53 @@
     }
 
     header {
-        background-image: url("https://coopercam.com.br/wp-content/uploads/2022/06/cafe-2-1920x1080.jpg");
+        background-image: url("https://yucoffee.com.br/cdn/shop/articles/Banner_blog_2_936a8233-eca1-474a-8ce1-57fa4c46f848.png?v=1734637169&width=1100");
         height: 100vh;
         min-height: 400px;
         background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
+
+    /* Criar um efeito de escurecimento para melhor leitura */
+    .header-overlay {
+        padding: 30px;
+        color: white;
+        text-align: center;
+    }
+
+    /* Ajustes no texto */
+    .header-overlay h2 {
+        font-size: 2rem;
+    }
+
+    .header-overlay p {
+        font-size: 1.5rem;
+    }
+
+    /* Botão estilizado */
+    .saiba-mais {
+        background: transparent;
+        border: 1px solid #006135;
+        padding: 6px 15px;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-top: 5px;
+        transition: all 0.3s;
+    }
+
+    .saiba-mais a {
+        color: #ffffff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .saiba-mais:hover {
+        background: #006135;
     }
 
     .navbar-light .navbar-nav .nav-link {
@@ -31,6 +74,7 @@
         color: #fff;
         font-size: 30px;
     }
+
     .nav-item {
         margin-left: 10px;
     }
@@ -56,16 +100,17 @@
         border: none;
         border-radius: 10px;
         margin-top: 5px;
+        transition: all 0.3s;
+    }
+
+    .navbar-light .navbar-nav .register-btn:hover {
+        background: #004d28;
     }
 
     .navbar-light .navbar-nav .register-btn .register-link {
         color: white;
         padding: 2px 5px;
         text-decoration: none;
-    }
-
-    .navbar-light .navbar-nav .register-btn:hover {
-        background: #004d28;
     }
 
     /* CARDS */
@@ -146,8 +191,13 @@
 
 <!-- BACKGROUND IMG -->
 <header>
-
+    <div class="header-overlay">
+        <h2>O Futuro da Gestão do Café na Palma da Sua Mão</h2>
+        <p>Redistre sua colheita, compare preços e maximize seus lucros com facilidade!</p>
+        <button class="saiba-mais"><a href="#sobre">Saiba Mais</a></button>
+    </div>
 </header>
+
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
@@ -183,27 +233,37 @@
 
 <!-- SOBRE -->
 <div class="container mt-5 mb-5" id="sobre">
-    <h1 class="text-center mt-5 mb-5">Bem Vindo ao Gestor do Grão</h1>
+    <div class="row align-items-center">
+        <h1 class="text-center mt-5 mb-4">Bem-vindo ao Gestor do Grão</h1>
+        <!-- Texto na esquerda -->
+        <div class="col-md-6 text-center">
+            <p>
+                O <strong>Gestor do Grão</strong> nasceu com a intenção de ajudar meu pai, um produtor de café que, por muito tempo, não costumava registrar informações sobre sua produção.
+                Isso mudou quando ele passou a fazer parte do <strong>AT&G (Assistência Técnica e Gerencial)</strong>, um programa onde, uma vez por mês, um agrônomo visita a propriedade para avaliar a lavoura e sugerir melhorias.
+            </p>
+            <p>
+                Com essa nova rotina, ele começou a fazer anotações sobre os custos, insumos e produtividade. No entanto, anotar tudo em papel tem suas desvantagens:
+                pode se rasgar, molhar, ser perdido ou até ficar ilegível com o tempo. Além disso, buscar informações antigas pode ser demorado e confuso.
+            </p>
+            <p>
+                Pensando nisso, criei o <strong>Gestor do Grão</strong> para ajudar produtores de café de pequeno e médio porte a organizarem suas produções de forma digital,
+                garantindo um controle eficiente dos gastos, da produção e das recomendações técnicas. Aqui, todas as informações ficam armazenadas de forma segura, acessível e organizada.
+            </p>
+        </div>
 
-    <!-- PARA TESTE DA NAVBAR -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae a doloremque id, labore, illo nemo nam facere rerum cum dolores temporibus voluptas suscipit consequuntur eius! Dignissimos itaque accusantium nobis voluptate?</p>
+        <!-- Imagem na direita -->
+        <div class="col-md-6 text-center">
+            <img src="<?= base_url('uploads/foto-pai-davi.png') ?>" class="img-fluid rounded" alt="Imagem de café">
+        </div>
+    </div>
 </div>
+
 
 <!-- CARDS -->
 <div class="container py-5" id="servicos">
-    <div class="row">
-        <div class="col-lg-4 col-sm-6">
-            <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
-                <div class="icon">
-                    <i class="bi bi-info-circle"></i>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title fw-bold">O que é o Gestor do Grão?</h4>
-                    <p class="card-text">Sistema web voltado para produtores de café, trazendo mais eficiência para o gerenciamento da produção.</p>
-                </div>
-            </div>
-        </div>
+    <h1 class="text-center mt-5 mb-5">Oque a plataforma oferece?</h1>
 
+    <div class="row">
         <div class="col-lg-4 col-sm-6">
             <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
                 <div class="icon">
@@ -212,6 +272,18 @@
                 <div class="card-body">
                     <h4 class="card-title fw-bold">Cadastro de Produções</h4>
                     <p class="card-text">Permite que os produtores registrem e acompanhem cada etapa da sua produção.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+            <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
+                <div class="icon">
+                    <i class="bi bi-info-circle"></i>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">Funcionalidades gratuitas</h4>
+                    <p class="card-text">Permite que os produtores acompanhar cada etapa da sua produção sem custos.</p>
                 </div>
             </div>
         </div>
