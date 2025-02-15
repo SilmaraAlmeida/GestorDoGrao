@@ -72,8 +72,8 @@
 <div class="container py-5" id="servicos">
     <h1 class="text-center mt-5 mb-5">Oque a plataforma oferece?</h1>
 
-    <div class="row">
-        <div class="col-lg-4 col-sm-6">
+    <div class="row d-flex align-items-stretch">
+        <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
                 <div class="icon">
                     <i class="bi bi-pencil-square"></i>
@@ -85,7 +85,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
                 <div class="icon">
                     <i class="bi bi-info-circle"></i>
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
                 <div class="icon">
                     <i class="bi bi-bar-chart-line"></i>
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
                 <div class="icon">
                     <i class="bi bi-graph-up"></i>
@@ -121,7 +121,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
                 <div class="icon">
                     <i class="bi bi-clipboard-check"></i>
@@ -133,7 +133,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 mb-4">
             <div class="card text-center border-0 shadow rounded-0 p-3 my-4 mx-auto">
                 <div class="icon">
                     <i class="bi bi-award"></i>
@@ -145,6 +145,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <!-- CONTATO -->
     <div class="contact">
