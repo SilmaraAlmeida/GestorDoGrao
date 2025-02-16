@@ -5,7 +5,8 @@
 }
 
 header {
-    background-image: url("https://yucoffee.com.br/cdn/shop/articles/Banner_blog_2_936a8233-eca1-474a-8ce1-57fa4c46f848.png?v=1734637169&width=1100");
+    /* background-image: url("https://yucoffee.com.br/cdn/shop/articles/Banner_blog_2_936a8233-eca1-474a-8ce1-57fa4c46f848.png?v=1734637169&width=1100"); */
+    background-image: url('../uploads/home-cafe.png');
     height: 100vh;
     min-height: 400px;
     background-size: cover;

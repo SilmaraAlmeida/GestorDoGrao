@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="<?= base_url('css/navbar-portal.css') ?>">
+</head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
     <div class="container">
         <a class="navbar-brand" href="#">Gestor do Grão</a>
@@ -10,10 +13,19 @@
                     <a class="nav-link" href="<?= url_to('portal_produtor') ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= url_to('comparar_fornecedores') ?>">Comparar fornecedores</a>
+                    <a class="nav-link" href="<?= url_to('comparar_fornecedores') ?>">Vendas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= url_to('monitorar_progresso') ?>">Monitorar Progresso</a>
+                    <a class="nav-link" href="<?= url_to('monitorar_progresso') ?>">Relatórios e Análises</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= url_to('monitorar_progresso') ?>">Controle de Produções</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= url_to('monitorar_progresso') ?>">Controle de Custos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= url_to('monitorar_progresso') ?>">Acompanhamento de Progresso</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link login-link" href="<?= url_to('cadastrar_producao') ?>">Cadastrar Produção</a>

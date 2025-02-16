@@ -9,6 +9,6 @@ class PortalProdutor extends BaseController
 {
     public function index()
     {
-        return view('partials/header') . view('partials/navbarPortal') . view('portalProdutor/homePortal');
+        return view('portalProdutor/homePortal');
     }
 }
