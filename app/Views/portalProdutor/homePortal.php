@@ -1,55 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal do Produtor</title>
-</head>
-
-<body>
-    <h3>Gráfico do google</h3>
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-    <script>
-        // carregar a API de visualização e o pacode do gráfico
-        google.charts.load('current', {
-            'packages': [
-                'corechart'
-            ]
-        });
-
-        // definimos qual função o google charts irá chamar quando tudo for carregado
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-            var jsonData = $.ajax({
-                url: '/portalProdutor',
-                dataType: 'json',
-                async: false,
-            }).responseText
-
-            // cria o data table com os dados vindos do JSON servidor
-            var data = new google.visualization.DataTable(jsonData);
-
-            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-
-            chart.draw(
-                data, {
-                    width: '100%',
-                    height: 400,
-                }
-            )
-        }
-    </script>
-    <div class="chart_div"></div>
-
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,64 +12,71 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href=" <?= base_url('css/navbar-portal.css') ?> ">
 </head>
 
 <body>
     <div class="wrapper">
         <aside id="sidebar">
-            <div class="d-flex">
-                <button type="button" id="toggle-btn">
-                    <i class="bi bi-grid"></i>
-                </button>
+            <div class="d-flex justfy-content-between p-4">
                 <div class="sidebar-logo">
                     <a href="#">Gestor do Grão</a>
                 </div>
+                <button class="toggle-btn border-0" type="button"><i class='bx bxs-chevrons-right' id="icon"></i></button>
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class="bi bi-person"></i>
-                        <span>Meu Perfil</span>
+                        <i class='bx bx-user'></i>
+                        <span>Perfil</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class="bi bi-journal-text"></i>
-                        <span>Agenda</span>
+                        <i class='bx bx-layer'></i>
+                        <span>Tarefas</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class="bi bi-shield-check"></i>
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class='bx bx-bug'></i>
                         <span>Auth</span>
                     </a>
                     <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="auth">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Login</a>
+                            <a href="" class="sidebar-link">
+                                Login
+                            </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Register</a>
+                            <a href="" class="sidebar-link">
+                                Cadastrar
+                            </a>
                         </li>
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
-                        <i class="bi bi-columns"></i>
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class='bx bx-bar-chart'></i>
                         <span>Multi Level</span>
                     </a>
                     <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
-                                <i class="bi bi-columns"></i>
-                                <span>Two Links</span>
+                            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                Two Links
                             </a>
                             <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
                                 <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">Link 1</a>
+                                    <a href="#" class="sidebar-link">
+                                        Link 1
+                                    </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">Link 2</a>
+                                    <a href="#" class="sidebar-link">
+                                        Link 2
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -129,29 +84,25 @@
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class="bi bi-bell"></i>
+                        <i class='bx bxs-bell-ring'></i>
                         <span>Notification</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class="bi bi-gear"></i>
-                        <span>Setting</span>
+                        <i class='bx bx-cog'></i>
+                        <span>Config</span>
                     </a>
                 </li>
             </ul>
             <div class="sidebar-footer">
                 <a href="#" class="sidebar-link">
-                    <i class="bi bi-box-arrow-left"></i>
+                    <i class='bx bx-log-out'></i>
                     <span>Logout</span>
                 </a>
             </div>
         </aside>
-        <div class="main p-3">
-            <div class="text-center">
-                <h1>Sidebar Bootstrap</h1>
-            </div>
-        </div>
+        <div class="main"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
