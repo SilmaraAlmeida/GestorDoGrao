@@ -1,3 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Produtor</title>
+</head>
+
+<body>
+    <h3>Gráfico do google</h3>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        // carregar a API de visualização e o pacode do gráfico
+        google.charts.load('current', {
+            'packages': [
+                'corechart'
+            ]
+        });
+
+        // definimos qual função o google charts irá chamar quando tudo for carregado
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var jsonData = $.ajax({
+                url: '/portalProdutor',
+                dataType: 'json',
+                async: false,
+            }).responseText
+
+            // cria o data table com os dados vindos do JSON servidor
+            var data = new google.visualization.DataTable(jsonData);
+
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+
+            chart.draw(
+                data, {
+                    width: '100%',
+                    height: 400,
+                }
+            )
+        }
+    </script>
+    <div class="chart_div"></div>
+
+</body>
+
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +74,7 @@
                 <button type="button" id="toggle-btn">
                     <i class="bi bi-grid"></i>
                 </button>
-                <div class="side-bar-logo">
+                <div class="sidebar-logo">
                     <a href="#">Gestor do Grão</a>
                 </div>
             </div>
