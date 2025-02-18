@@ -1,1 +1,0 @@
-<h3 class="text text-center mt-5 mb-5">Comparar fornecedores</h3>

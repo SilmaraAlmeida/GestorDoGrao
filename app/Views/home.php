@@ -153,28 +153,24 @@
             <h2 class="text-center">Entre em contato!</h2>
 
             <form class="needs-validation" action="<?= url_to('enviar_email') ?>" method="post">
-                <div class="form-group was-validated">
+                <div class="form-group">
                     <label class="form-label" for="nome">Nome</label>
                     <input class="form-control" type="text" name="nome" id="nome" required>
-                    <div class="invalid-feedback">Por favor, insira seu nome</div>
                 </div>
 
-                <div class="form-group was-validated">
+                <div class="form-group">
                     <label class="form-label" for="email">E-mail</label>
                     <input class="form-control" type="email" name="email" id="email" required>
-                    <div class="invalid-feedback">Por favor, insira seu email</div>
                 </div>
 
-                <div class="form-group was-validated">
+                <div class="form-group">
                     <label class="form-label" for="assunto">Assunto</label>
                     <input class="form-control" type="text" name="assunto" id="assunto" required></input>
-                    <div class="invalid-feedback">Por favor, insira o assunto</div>
                 </div>
 
-                <div class="form-group was-validated">
+                <div class="form-group">
                     <label class="form-label" for="mensagem">Mensagem</label>
                     <textarea class="form-control" name="mensagem" id="mensagem" required></textarea>
-                    <div class="invalid-feedback">Por favor, insira sua mensagem</div>
                 </div>
 
                 <input class="btn btn-success w-100" type="submit" value="Enviar mensagem">
