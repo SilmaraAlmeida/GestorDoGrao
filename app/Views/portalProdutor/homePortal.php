@@ -20,7 +20,7 @@
 <body>
     <div class="wrapper">
         <aside id="sidebar">
-            <div class="d-flex justfy-content-between p-4">
+            <div class="d-flex justify-content-between p-4">
                 <div class="sidebar-logo">
                     <a href="#">Gestor</a>
                 </div>
@@ -34,25 +34,25 @@
                     </a>
                     <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="auth">
                         <li class="sidebar-item">
-                            <a href="" class="sidebar-link">
+                            <a href="<?= url_to('chamar_registrar') ?>" class="sidebar-link">
                                 Registrar Produções
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="" class="sidebar-link">
+                            <a href="<?= url_to('chamar_historico') ?>" class="sidebar-link">
                                 Histórico de Produção
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="<?= url_to('chamar_vendas') ?>" class="sidebar-link">
                         <i class='bx bxs-cart-add'></i>
                         <span>Cadastro de Vendas</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="<?= url_to('chamar_estoque') ?>" class="sidebar-link">
                         <i class='bx bxs-box'></i>
                         <span>Controle de Estoque</span>
                     </a>
@@ -64,12 +64,12 @@
                     </a>
                     <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#produtividade" id="analise">
                         <li class="sidebar-item">
-                            <a href="" class="sidebar-link">
+                            <a href="<?= url_to('chamar_produtividade') ?>" class="sidebar-link">
                                 Análise de Produtividade
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="" class="sidebar-link">
+                            <a href="<?= url_to('chamar_mercado') ?>" class="sidebar-link">
                                 Análise de Mercado
                             </a>
                         </li>
@@ -82,12 +82,12 @@
                     </a>
                     <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="controleCustos">
                         <li class="sidebar-item">
-                            <a href="" class="sidebar-link">
+                            <a href="<?= url_to('chamar_custos') ?>" class="sidebar-link">
                                 Registro de Custos
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="" class="sidebar-link">
+                            <a href="<?= url_to('chamar_relatorio_custos') ?>" class="sidebar-link">
                                 Relatório de Custos
                             </a>
                         </li>
@@ -95,20 +95,20 @@
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="<?= url_to('chamar_monitoramento') ?>" class="sidebar-link">
                         <i class='bx bxs-binoculars'></i>
                         <span>Monitoramento</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="<?= url_to('chamar_configuracao') ?>" class="sidebar-link">
                         <i class='bx bx-cog'></i>
                         <span>Config</span>
                     </a>
                 </li>
             </ul>
             <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
+                <a href="<?= url_to('chamar_perfil') ?>" class="sidebar-link">
                     <i class='bx bx-user'></i>
                     <span>Perfil</span>
                 </a>
@@ -119,19 +119,8 @@
             </div>
         </aside>
         <div class="main container">
-            <h4 class="text text-center mt-4 mb-4">Bem vindo(a) ao portal do Produtor!</h4>
-            <p class="text text-center mt-4">Olá, você está na tela inicial do <strong>Portal do Produtor</strong>. Aqui, você pode:</p>
-            <ul class="text text-center mt-4">
-                <li><strong>Cadastrar Vendas</strong> - Registre suas vendas com facilidade, inserindo dados de cliente, quantidade e preço</li>
-                <li><strong>Gerenciar Estoque</strong> - Mantenha o controle do seu estoque de café, evitanto desperdiços e planejando suas compras de forma eficiente</li>
-                <li><strong>Acompanhar a Produtividade</strong> - Gere relatórios detalhados e gráficos para monitorar a evolução da sua produção ao longo do tempo</li>
-                <li><strong>Analizar o Mercado</strong> - Fique por dentro das tendências de mercado e tome decisões informadas sobre o melhor momento para vender seu café</li>
-                <li><strong>Registrar Produções</strong> - Documente suas colheitas com todos os detalhes, desde a data até o custo de produção</li>
-                <li><strong>Controlar Custos</strong> - Registre e acompanhe todos os seus gastos com insumos, mão de obra e outros custos</li>
-                <li><strong>Monitorar Crescimento</strong> - Faça anotações sobre o estado da lavoura e receba recomendações dos agrônomos do AT&G</li>
-            </ul>
-            <p class="text text-center mt-4">Explore todas as funcionalidades do portal e aproveite ao máximo as ferramentas disponíveis para otimizar sua produção e aumentar sua eficiência. Estamos aqui para ajudar você a alcançar seus objetivos!</p>
-            <p class="text text-center">Qualquer dúvida, pode entrar em contato através deste e-mail: gestordograo@gmail.com</p>
+            <p class="text text-center">Olá, <?php echo session()->get('user')->nome ?>!</p>
+            <?= $this->renderSection('content') ?>
         </div>
     </div>
 

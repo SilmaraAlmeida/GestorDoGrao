@@ -23,11 +23,14 @@ $routes->post('/cadastrarDB', 'Cadastrar::store', ['as' => 'cadastrar_store']);
 $routes->get('/portalProdutor', 'PortalProdutor::index', ['as' => 'portal_produtor']);
 
 // ROTAS DA NAVBAR LATERAL DO PRODUTOR
-$routes->get('/portalProdutor/registrarProducoes', 'CadastroControlePortal::registrarProducoes', ['as' => 'registrar_producao']);
-$routes->get('/portalProdutor/historicoProducoes', 'CadastroControlePortal::historicoProducoes', ['as' => 'historico_producao']);
-
-$routes->get('/portalProdutor/analiseProdutividade', 'RelatorioAnalisePortal::analiseProdutividade', ['as' => 'analise_produtividade']);
-$routes->get('/portalProdutor/analiseMercado', 'RelatorioAnalisePortal::analiseMercado', ['as' => 'analise_mercado']);
-
-$routes->get('/portalProdutor/registroCustos', 'CustosPortal::registroCustos', ['as' => 'registro_custos']);
-$routes->get('/portalProdutor/relatorioCustos', 'CustosPortal::relatorioCustos', ['as' => 'relatorio_custos']);
+$routes->get('/portalProdutor/registrarProducoes', 'NavbarPortal::chamarRegistrarProducoes',     ['as' => 'chamar_registrar']);
+$routes->get('/portalProdutor/cadastrarVendas', 'NavbarPortal::chamarCadastrarVendas',           ['as' => 'chamar_vendas']);
+$routes->get('/portalProdutor/controleEstoque', 'NavbarPortal::chamarControleEstoque',           ['as' => 'chamar_estoque']);
+$routes->get('/portalProdutor/historicoProducoes', 'NavbarPortal::chamarHistoricoProducao',      ['as' => 'chamar_historico']);
+$routes->get('/portalProdutor/analiseProdutividade', 'NavbarPortal::chamarAnaliseProdutividade', ['as' => 'chamar_produtividade']);
+$routes->get('/portalProdutor/analiseMercado', 'NavbarPortal::chamarAnaliseMercado',             ['as' => 'chamar_mercado']);
+$routes->get('/portalProdutor/registroCustos', 'NavbarPortal::chamarRegistroCustos',             ['as' => 'chamar_custos']);
+$routes->get('/portalProdutor/relatorioCustos', 'NavbarPortal::chamarRelatorioCustos',           ['as' => 'chamar_relatorio_custos']);
+$routes->get('/portalProdutor/monitoramento', 'NavbarPortal::chamarMonitoramento',               ['as' => 'chamar_monitoramento']);
+$routes->get('/portalProdutor/configuracao', 'NavbarPortal::chamarConfiguracao',                 ['as' => 'chamar_configuracao']);
+$routes->get('/portalProdutor/perfil', 'NavbarPortal::chamarPerfil',                             ['as' => 'chamar_perfil']);

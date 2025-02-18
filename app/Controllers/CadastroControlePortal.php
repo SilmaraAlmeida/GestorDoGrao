@@ -10,7 +10,7 @@ class CadastroControlePortal extends BaseController
 {
     public function index()
     {
-        return view('partials/header') . view('portalProdutor/formCadastroProducao');
+        return view('partials/header') . view('portalProdutor/formRegistrarProducoes');
     }
 
     public function registrarProducoes()
