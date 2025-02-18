@@ -6,14 +6,14 @@ use App\Controllers\BaseController;
 use App\Models\ProducaoCafe;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class CadastrarProducao extends BaseController
+class CadastroControlePortal extends BaseController
 {
     public function index()
     {
         return view('partials/header') . view('portalProdutor/formCadastroProducao');
     }
 
-    public function store()
+    public function registrarProducoes()
     {
         $producao = new ProducaoCafe();
         $inserted = $producao->insert($this->request->getPost());
@@ -24,4 +24,10 @@ class CadastrarProducao extends BaseController
 
         return redirect()->route('cadastrar_producao')->with('success', 'Produção cadastrada com sucesso');
     }
+
+    public function historicoProducoes()
+    {
+        var_dump('histórico produções');
+    }
+
 }

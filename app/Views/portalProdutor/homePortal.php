@@ -22,47 +22,47 @@
         <aside id="sidebar">
             <div class="d-flex justfy-content-between p-4">
                 <div class="sidebar-logo">
-                    <a href="#">Gestor do Grão</a>
+                    <a href="#">Gestor</a>
                 </div>
                 <button class="toggle-btn border-0" type="button"><i class='bx bxs-chevrons-right' id="icon"></i></button>
             </div>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                    <i class='bx bx-registered'></i>
-                    <span>Cadastro e Controle</span>
-                </a>
-                <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="auth">
-                    <li class="sidebar-item">
-                        <a href="" class="sidebar-link">
-                            Registrar Produções
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="" class="sidebar-link">
-                            Histórico de Produção
-                        </a>
-                    </li>
-                </ul>
-            </li>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class='bx bxs-user-detail'></i>
+                        <span>Cadastro e Controle</span>
+                    </a>
+                    <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="auth">
+                        <li class="sidebar-item">
+                            <a href="" class="sidebar-link">
+                                Registrar Produções
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="" class="sidebar-link">
+                                Histórico de Produção
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class='bx bx-user'></i>
+                        <i class='bx bxs-cart-add'></i>
                         <span>Cadastro de Vendas</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class='bx bx-layer'></i>
+                        <i class='bx bxs-box'></i>
                         <span>Controle de Estoque</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class='bx bx-bug'></i>
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#analise" aria-expanded="false" aria-controls="analise">
+                        <i class='bx bxs-bar-chart-alt-2'></i>
                         <span>Relatórios e Análise</span>
                     </a>
-                    <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#produtividade" id="auth">
+                    <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#produtividade" id="analise">
                         <li class="sidebar-item">
                             <a href="" class="sidebar-link">
                                 Análise de Produtividade
@@ -76,11 +76,11 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class='bx bx-bug'></i>
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#controleCustos" aria-expanded="false" aria-controls="controleCustos">
+                        <i class='bx bxs-wallet'></i>
                         <span>Controle de Custos</span>
                     </a>
-                    <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="auth">
+                    <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="controleCustos">
                         <li class="sidebar-item">
                             <a href="" class="sidebar-link">
                                 Registro de Custos
@@ -93,34 +93,10 @@
                         </li>
                     </ul>
                 </li>
-                <!-- <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
-                        <i class='bx bx-bar-chart'></i>
-                        <span>Multi Level</span>
-                    </a>
-                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
-                                Cadastro e Controle de Produções
-                            </a>
-                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
-                                        Registrar Produções
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">
-                                        Histórico de Produção
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li> -->
+
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class='bx bxs-bell-ring'></i>
+                        <i class='bx bxs-binoculars'></i>
                         <span>Monitoramento</span>
                     </a>
                 </li>
@@ -155,7 +131,7 @@
                 <li><strong>Monitorar Crescimento</strong> - Faça anotações sobre o estado da lavoura e receba recomendações dos agrônomos do AT&G</li>
             </ul>
             <p class="text text-center mt-4">Explore todas as funcionalidades do portal e aproveite ao máximo as ferramentas disponíveis para otimizar sua produção e aumentar sua eficiência. Estamos aqui para ajudar você a alcançar seus objetivos!</p>
-            <p class="text text-center ">Qualquer dúvida, pode entrar em contato através deste e-mail: gestordograo@gmail.com</p>
+            <p class="text text-center">Qualquer dúvida, pode entrar em contato através deste e-mail: gestordograo@gmail.com</p>
         </div>
     </div>
 

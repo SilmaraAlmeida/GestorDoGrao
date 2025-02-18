@@ -22,11 +22,12 @@ $routes->post('/cadastrarDB', 'Cadastrar::store', ['as' => 'cadastrar_store']);
 // CHAMA O PORTAL DO PRODUTOR
 $routes->get('/portalProdutor', 'PortalProdutor::index', ['as' => 'portal_produtor']);
 
-// OPÇÕES DA NAVBAR DO PRODUTOR
-$routes->get('/cadastrarProducao', 'CadastrarProducao::index', ['as' => 'cadastrar_producao']);
-$routes->post('/cadastrarProducaoDB', 'CadastrarProducao::store', ['as' => 'cadastrar_producao_store']);
+// ROTAS DA NAVBAR LATERAL DO PRODUTOR
+$routes->get('/portalProdutor/registrarProducoes', 'CadastroControlePortal::registrarProducoes', ['as' => 'registrar_producao']);
+$routes->get('/portalProdutor/historicoProducoes', 'CadastroControlePortal::historicoProducoes', ['as' => 'historico_producao']);
 
-$routes->get('/compararFornecedores', 'CompararFornecedores::index', ['as' => 'comparar_fornecedores']);
+$routes->get('/portalProdutor/analiseProdutividade', 'RelatorioAnalisePortal::analiseProdutividade', ['as' => 'analise_produtividade']);
+$routes->get('/portalProdutor/analiseMercado', 'RelatorioAnalisePortal::analiseMercado', ['as' => 'analise_mercado']);
 
-$routes->get('/monitorarProgresso', 'MonitorarProgresso::index', ['as' => 'monitorar_progresso']);
-
+$routes->get('/portalProdutor/registroCustos', 'CustosPortal::registroCustos', ['as' => 'registro_custos']);
+$routes->get('/portalProdutor/relatorioCustos', 'CustosPortal::relatorioCustos', ['as' => 'relatorio_custos']);
