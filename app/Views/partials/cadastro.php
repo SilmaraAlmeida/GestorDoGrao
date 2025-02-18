@@ -16,17 +16,17 @@
             <?php endif ?>
     
             <form class="needs-validation" action="<?= url_to('cadastrar_store') ?>" method="post">
-                <div class="form-group was-validated">
+                <div class="form-group">
                     <label class="form-label" for="nome">Nome</label>
                     <input class="form-control" type="text" name="nome" id="nome" required>
                 </div>
     
-                <div class="form-group was-validated">
+                <div class="form-group">
                     <label class="form-label" for="email">E-mail</label>
                     <input class="form-control" type="email" name="email" id="email" required>
                 </div>
     
-                <div class="form-group was-validated">
+                <div class="form-group">
                     <label class="form-label" for="senha">Senha</label>
                     <input class="form-control" type="password" name="senha" id="senha" required>
                 </div>
