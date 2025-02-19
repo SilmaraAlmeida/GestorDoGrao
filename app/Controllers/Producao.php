@@ -34,6 +34,13 @@ class Producao extends BaseController
         return redirect()->route('chamar_registrar')->with('success', 'Produção cadastrada com sucesso!');
     }
 
+    public function visualizar($id)
+    {
+        return view('portalProdutor/formViewsProducoes', [
+            'producoes' => $this->producao->find($id),
+        ]);
+    }
+
     public function editar($id)
     {
 

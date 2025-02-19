@@ -40,6 +40,8 @@ $routes->post('/portalProdutor/registrarProducoes/cadastrar', 'Producao::cadastr
 $routes->get('/portalProdutor/modificar', 'Producao::index', ['as' => 'form_producao']);
 
 // CRUD DA OPÇÃO 'MODIFICAR PRODUCOES' NA NAVBAR DO PRODUTOR
+$routes->get('/portalProdutor/formVisualizarProducao/(:any)', 'Producao::visualizar/$1');
+
 $routes->get('/portalProdutor/formEditarProducao/(:any)', 'Producao::editar/$1', ['as' => 'form_editar_producao']);
 $routes->post('/portalProdutor/formEditarProducao/(:any)', 'Producao::update/$1', ['as' => 'form_editar_producao']);
 $routes->get('/portalProdutor/deletarProducao/(:any)', 'Producao::deletar/$1', ['as' => 'deletar_producao']);
