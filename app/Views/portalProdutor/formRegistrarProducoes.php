@@ -1,4 +1,79 @@
 <?php echo $this->extend('portalProdutor/homePortal') ?>
 <?php echo $this->section('content') ?>
-    <h3 class="text text-center mt-5 mb-5">Formulário para registrar produções</h3>
+<style>
+    .duvidas {
+        margin-top: 130px;
+        margin-bottom: 60px;
+    }
+</style>
+
+<div class="text-center">
+    <h3 class="mt-5 mb-5">Formulário para registrar produções</h3>
+    <?php if (session()->has('error')): ?>
+        <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
+    <?php endif ?>
+    <?php if (session()->has('success')): ?>
+        <span class="text text-success"><?= session()->getFlashdata('success') ?></span>
+    <?php endif ?>
+</div>
+
+<form action="<?= url_to('cadastrar_producao') ?>" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group mt-4 mb-4">
+                <label for="nome_completo">Nome do Produtor</label>
+                <input type="text" class="form-control" name="nome_completo" id="nome_completo" placeholder="Ex.: José Silva">
+            </div>
+            <div class="form-group mt-4 mb-4">
+                <label for="estado">Estado</label>
+                <input type="text" class="form-control" name="estado" id="estado" placeholder="Ex.: Minas Gerais">
+            </div>
+            <div class="form-group mt-4 mb-4">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Ex.: Rosário da Limeira">
+            </div>
+            <div class="form-group mt-4 mb-4">
+                <label for="telefone">Telefone</label>
+                <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Ex.: (XX) XXXXX-XXXX">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group mt-4 mb-4">
+                <label for="area_plantada">Área Plantada (em hectares)</label>
+                <input type="number" class="form-control" name="area_plantada" id="area_plantada" placeholder="Ex.: XX.X">
+            </div>
+            <div class="form-group mt-4 mb-4">
+                <label for="variedade_cafe">Variedade do Café</label>
+                <input type="text" class="form-control" name="variedade_cafe" id="variedade_cafe" placeholder="Ex.: Arábica">
+            </div>
+            <div class="form-group mt-4 mb-4">
+                <label for="metodos_cultivo">Metodos de Cultivo</label>
+                <select name="metodos_cultivo" class="form-control" id="metodos_cultivo">
+                    <option value="Cultivo Tradicional">Cultivo Tradicional</option>
+                    <option value="Agro Floresta">Agro Floresta</option>
+                    <option value="Sistema de Sombras">Sistema de Sombras</option>
+                    <option value="Cultivo Orgânico">Cultivo Orgânico</option>
+                </select>
+            </div>
+            <div class="form-group mt-4 mb-4">
+                <label for="producao_safra">Quantidade média produzido na ultima safra</label>
+                <input type="text" class="form-control" name="producao_safra" id="producao_safra" placeholder="Ex.: XXXX kg">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+    </div>
+</form>
+
+<div class="container text-center duvidas">
+    <h4 class="mb-5">Em Caso de Dúvidas:</h4>
+
+    <p><strong>Cultivo Tradicional</strong> -> Plantio em linhas, manejo convencional do solo, irrigação e controle de pragas.</p>
+    <p><strong>Agro Floresta</strong> -> Integra o cultivo de café com outras plantas, como árvores frutíferas e madeireiras.</p>
+    <p><strong>Sistema de Sombras</strong> -> Utiliza árvores para fornecer sombra aos cafeeiros, moderando a temperatura e protegendo do sol direto.</p>
+    <p><strong>Cultivo Orgânico</strong> -> Evita pesticidas e fertilizantes químicos, utilizando métodos naturais para controle de pragas e fertilização do solo.</p>
+</div>
+
 <?php echo $this->endSection() ?>

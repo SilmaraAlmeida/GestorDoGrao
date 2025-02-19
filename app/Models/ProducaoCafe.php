@@ -19,13 +19,9 @@ class ProducaoCafe extends Model
         'cidade',
         'telefone',
         'area_plantada',
-        'numero_registro',
         'variedade_cafe',
         'metodos_cultivo',
         'producao_safra',
-        'produtividade',
-        'mercado_destino',
-        'certificacoes'
     ];
 
     protected bool $allowEmptyInserts = false;

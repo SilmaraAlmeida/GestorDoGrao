@@ -34,3 +34,6 @@ $routes->get('/portalProdutor/relatorioCustos', 'NavbarPortal::chamarRelatorioCu
 $routes->get('/portalProdutor/monitoramento', 'NavbarPortal::chamarMonitoramento',               ['as' => 'chamar_monitoramento']);
 $routes->get('/portalProdutor/configuracao', 'NavbarPortal::chamarConfiguracao',                 ['as' => 'chamar_configuracao']);
 $routes->get('/portalProdutor/perfil', 'NavbarPortal::chamarPerfil',                             ['as' => 'chamar_perfil']);
+
+// FUNCIONALIDADES DAS NAVBAR LATERAL DO PRODUTOR
+$routes->post('/portalProdutor/registrarProducoes/cadastrar', 'CadastrarProducao::cadastrar', ['as' => 'cadastrar_producao']);
