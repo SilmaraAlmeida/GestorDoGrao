@@ -12,7 +12,7 @@ class Producao extends BaseController
 
     public function __construct()
     {
-        $this->producao = new ProducaoCafe();
+        $dados = $this->producao = new ProducaoCafe();
     }
 
     public function index()
@@ -36,17 +36,19 @@ class Producao extends BaseController
 
     public function editar($id)
     {
-        $producao = $this->producao->find($id);
-    
-        if (!$producao) {
-            var_dump('não foi encontrado');
-            die();
-        }
-    
-        return view('partials/header') . view('portalProdutor/formEditarProducoes', [
-            'producoes' => $producao,
+
+        return view('portalProdutor/formEditarProducoes', [
+            'producoes' => $this->producao->find($id),
         ]);
-    }    
+    }
+
+    public function update()
+    {
+        $producao = new ProducaoCafe();
+        $producao->save($this->request->getPost());
+
+        return redirect()->route('form_producao');
+    }
 
     public function deletar($id)
     {

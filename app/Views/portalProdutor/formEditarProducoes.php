@@ -17,35 +17,36 @@
     <?php endif ?>
 </div>
 
-<form action="<?= url_to('editar_producao') ?>" method="post">
+<form action="" method="post">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group mt-4 mb-4">
                 <label for="nome_completo">Nome do Produtor</label>
-                <input type="text" class="form-control" name="nome_completo" id="nome_completo" placeholder="Ex.: José Silva" value="<?php echo $producoes['nome_completo'] ?? '' ?>" required>
+                <input type="text" class="form-control" name="nome_completo" id="nome_completo" placeholder="Ex.: José Silva" value="<?php echo isset($producoes['nome_completo']) ? $producoes['nome_completo'] : '' ?>" required>
+
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="estado">Estado</label>
-                <input type="text" class="form-control" name="estado" id="estado" placeholder="Ex.: Minas Gerais" value="<?php echo $producoes['estado'] ?? '' ?>" required>
+                <input type="text" class="form-control" name="estado" id="estado" placeholder="Ex.: Minas Gerais" value="<?php echo isset($producoes['estado']) ? $producoes['estado'] : '' ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="cidade">Cidade</label>
-                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Ex.: Rosário da Limeira" value="<?php echo $producoes['cidade'] ?>" required>
+                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Ex.: Rosário da Limeira" value="<?php echo isset($producoes['cidade']) ? $producoes['cidade'] : '' ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="telefone">Telefone</label>
-                <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Ex.: (XX) XXXXX-XXXX" value="<?php echo $producoes['telefone'] ?>" required>
+                <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Ex.: (XX) XXXXX-XXXX" value="<?php echo isset($producoes['telefone']) ? $producoes['telefone'] : '' ?>" required>
             </div>
         </div>
 
         <div class="col-md-6">
             <div class="form-group mt-4 mb-4">
                 <label for="area_plantada">Área Plantada (em hectares)</label>
-                <input type="number" class="form-control" name="area_plantada" id="area_plantada" placeholder="Ex.: XX.X" value="<?php echo $producoes['area_plantada'] ?>" required>
+                <input type="number" class="form-control" name="area_plantada" id="area_plantada" placeholder="Ex.: XX.X" value="<?php echo isset($producoes['area_plantada']) ? $producoes['area_plantada'] : '' ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="variedade_cafe">Variedade do Café</label>
-                <input type="text" class="form-control" name="variedade_cafe" id="variedade_cafe" placeholder="Ex.: Arábica" value="<?php echo $producoes['variedade_cafe'] ?>" required>
+                <input type="text" class="form-control" name="variedade_cafe" id="variedade_cafe" placeholder="Ex.: Arábica" value="<?php echo isset($producoes['variedade_cafe']) ? $producoes['variedade_cafe'] : '' ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="metodos_cultivo">Metodos de Cultivo</label>
@@ -58,11 +59,11 @@
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="producao_safra">Quantidade média produzido na ultima safra</label>
-                <input type="text" class="form-control" name="producao_safra" id="producao_safra" placeholder="Ex.: XXXX kg" value="<?php echo $producoes['producao_safra'] ?>" required>
+                <input type="text" class="form-control" name="producao_safra" id="producao_safra" placeholder="Ex.: XXXX kg" value="<?php echo isset($producoes['producao_safra']) ? $producoes['producao_safra'] : '' ?>" required>
             </div>
         </div>
     </div>
-    <input type="hidden" name="id" value="<?php echo $producoes['id'] ?>">
+    <input type="hidden" name="id" value="<?php echo isset($producoes['id']) ? $producoes['id'] : '' ?>">
     <div class="col-12 text-center mt-4">
         <button type="submit" class="btn btn-success">Cadastrar</button>
         <a href="<?= url_to('form_producao') ?>" class="btn btn-danger">Cancelar</a>
