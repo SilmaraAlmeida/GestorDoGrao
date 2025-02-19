@@ -1,0 +1,47 @@
+<?php echo $this->extend('portalProdutor/homePortal') ?>
+<?php echo $this->section('content') ?>
+<div class="text-center mb-3">
+    <h3 class="mt-5 mb-2">Modifiar Produção</h3>
+    <?php if (session()->has('error')): ?>
+        <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
+    <?php endif ?>
+    <?php if (session()->has('success')): ?>
+        <span class="text text-success"><?= session()->getFlashdata('success') ?></span>
+    <?php endif ?>
+</div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <th>
+            <th>Nome do Produtor</th>
+            <th>Estado</th>
+            <th>Cidade</th>
+            <th>Area Plantada</th>
+            <th>Variedade</th>
+            <th>Metodos de Cultivo</th>
+            <th>Produção ultima safra</th>
+            <th>Ações</th>
+            </th>
+        </thead>
+        <tbody>
+            <?php foreach ($producoes as $producao): ?>
+                <tr>
+                    <td></td>
+                    <td><?php echo $producao['nome_completo'] ?></td>
+                    <td><?php echo $producao['estado'] ?></td>
+                    <td><?php echo $producao['cidade'] ?></td>
+                    <td><?php echo $producao['area_plantada'] ?></td>
+                    <td><?php echo $producao['variedade_cafe'] ?></td>
+                    <td><?php echo $producao['metodos_cultivo'] ?></td>
+                    <td><?php echo $producao['producao_safra'] ?></td>
+                    <td>
+                        <?php echo anchor('portalProdutor/editarProducao/' . $producao['id'], "<i class='bx bx-pencil'></i>") ?>
+                        <?php echo anchor('portalProdutor/deletarProducao/' . $producao['id'], "<i class='bx bx-trash'></i>") ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+</div>
+<?php echo $this->endSection() ?>

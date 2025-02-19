@@ -39,6 +39,11 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
+                            <a href="<?= url_to('form_producao') ?>" class="sidebar-link">
+                                Modificar Produções
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
                             <a href="<?= url_to('chamar_historico') ?>" class="sidebar-link">
                                 Histórico de Produção
                             </a>

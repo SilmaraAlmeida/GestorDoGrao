@@ -8,7 +8,7 @@
 </style>
 
 <div class="text-center">
-    <h3 class="mt-5 mb-5">Formulário para registrar produções</h3>
+    <h3 class="mt-5 mb-5">Formulário para editar produções</h3>
     <?php if (session()->has('error')): ?>
         <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
     <?php endif ?>
@@ -17,35 +17,35 @@
     <?php endif ?>
 </div>
 
-<form action="<?= url_to('cadastrar_producao') ?>" method="post">
+<form action="<?= url_to('editar_producao') ?>" method="post">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group mt-4 mb-4">
                 <label for="nome_completo">Nome do Produtor</label>
-                <input type="text" class="form-control" name="nome_completo" id="nome_completo" placeholder="Ex.: José Silva" required>
+                <input type="text" class="form-control" name="nome_completo" id="nome_completo" placeholder="Ex.: José Silva" value="<?php echo $producoes['nome_completo'] ?? '' ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="estado">Estado</label>
-                <input type="text" class="form-control" name="estado" id="estado" placeholder="Ex.: Minas Gerais" required>
+                <input type="text" class="form-control" name="estado" id="estado" placeholder="Ex.: Minas Gerais" value="<?php echo $producoes['estado'] ?? '' ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="cidade">Cidade</label>
-                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Ex.: Rosário da Limeira" required>
+                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Ex.: Rosário da Limeira" value="<?php echo $producoes['cidade'] ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="telefone">Telefone</label>
-                <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Ex.: (XX) XXXXX-XXXX" required>
+                <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Ex.: (XX) XXXXX-XXXX" value="<?php echo $producoes['telefone'] ?>" required>
             </div>
         </div>
 
         <div class="col-md-6">
             <div class="form-group mt-4 mb-4">
                 <label for="area_plantada">Área Plantada (em hectares)</label>
-                <input type="number" class="form-control" name="area_plantada" id="area_plantada" placeholder="Ex.: XX.X" required>
+                <input type="number" class="form-control" name="area_plantada" id="area_plantada" placeholder="Ex.: XX.X" value="<?php echo $producoes['area_plantada'] ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="variedade_cafe">Variedade do Café</label>
-                <input type="text" class="form-control" name="variedade_cafe" id="variedade_cafe" placeholder="Ex.: Arábica" required>
+                <input type="text" class="form-control" name="variedade_cafe" id="variedade_cafe" placeholder="Ex.: Arábica" value="<?php echo $producoes['variedade_cafe'] ?>" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="metodos_cultivo">Metodos de Cultivo</label>
@@ -58,12 +58,14 @@
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="producao_safra">Quantidade média produzido na ultima safra</label>
-                <input type="text" class="form-control" name="producao_safra" id="producao_safra" placeholder="Ex.: XXXX kg" required>
+                <input type="text" class="form-control" name="producao_safra" id="producao_safra" placeholder="Ex.: XXXX kg" value="<?php echo $producoes['producao_safra'] ?>" required>
             </div>
         </div>
     </div>
+    <input type="hidden" name="id" value="<?php echo $producoes['id'] ?>">
     <div class="col-12 text-center mt-4">
         <button type="submit" class="btn btn-success">Cadastrar</button>
+        <a href="<?= url_to('form_producao') ?>" class="btn btn-danger">Cancelar</a>
     </div>
 </form>
 

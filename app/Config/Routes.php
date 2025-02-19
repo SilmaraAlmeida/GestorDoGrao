@@ -36,4 +36,9 @@ $routes->get('/portalProdutor/configuracao', 'NavbarPortal::chamarConfiguracao',
 $routes->get('/portalProdutor/perfil', 'NavbarPortal::chamarPerfil',                             ['as' => 'chamar_perfil']);
 
 // FUNCIONALIDADES DAS NAVBAR LATERAL DO PRODUTOR
-$routes->post('/portalProdutor/registrarProducoes/cadastrar', 'CadastrarProducao::cadastrar', ['as' => 'cadastrar_producao']);
+$routes->post('/portalProdutor/registrarProducoes/cadastrar', 'Producao::cadastrar', ['as' => 'cadastrar_producao']);
+$routes->get('/portalProdutor/modificar', 'Producao::index', ['as' => 'form_producao']);
+
+// CRUD DA OPÇÃO 'MODIFICAR PRODUCOES' NA NAVBAR DO PRODUTOR
+$routes->get('/portalProdutor/editarProducao/(:any)', 'Producao::editar/$1', ['as' => 'editar_producao']);
+$routes->get('/portalProdutor/deletarProducao/(:any)', 'Producao::deletar/$1', ['as' => 'deletar_producao']);

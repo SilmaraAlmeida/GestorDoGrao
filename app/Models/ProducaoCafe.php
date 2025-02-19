@@ -9,7 +9,7 @@ class ProducaoCafe extends Model
     protected $table            = 'producao_cafe';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'object';
+    protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
