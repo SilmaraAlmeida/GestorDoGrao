@@ -36,9 +36,9 @@
                     <td><?php echo $producao['metodos_cultivo'] ?></td>
                     <td><?php echo $producao['producao_safra'] ?></td>
                     <td>
-                        <?php echo anchor('portalProdutor/formVisualizarProducao/' . $producao['id'], "<i class='bx bx-low-vision'></i>") ?>
-                        <?php echo anchor('portalProdutor/formEditarProducao/' . $producao['id'], "<i class='bx bx-pencil'></i>") ?>
-                        <?php echo anchor('portalProdutor/deletarProducao/' . $producao['id'], "<i class='bx bx-trash'></i>") ?>
+                        <?php echo anchor('portalProdutor/formVisualizarProducao/' . $producao['id'], "<i class='bx bx-low-vision text-success'></i>") ?>
+                        <?php echo anchor('portalProdutor/formEditarProducao/' . $producao['id'], "<i class='bx bx-pencil text-success'></i>") ?>
+                        <?php echo anchor('portalProdutor/deletarProducao/' . $producao['id'], "<i class='bx bx-trash text-success'></i>") ?>
                     </td>
                 </tr>
             <?php endforeach; ?>

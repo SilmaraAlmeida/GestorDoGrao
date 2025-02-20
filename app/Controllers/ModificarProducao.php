@@ -3,10 +3,12 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\Historico;
 use App\Models\ProducaoCafe;
 use CodeIgniter\HTTP\ResponseInterface;
+use CodeIgniter\Model;
 
-class Producao extends BaseController
+class ModificarProducao extends BaseController
 {
     private $producao;
 
@@ -25,6 +27,7 @@ class Producao extends BaseController
     public function cadastrar()
     {
         $producao = new ProducaoCafe();
+
         $inserted = $producao->insert($this->request->getPost());
 
         if (!$inserted) {
@@ -52,6 +55,7 @@ class Producao extends BaseController
     public function update()
     {
         $producao = new ProducaoCafe();
+
         $producao->save($this->request->getPost());
 
         return redirect()->route('form_producao');
@@ -67,4 +71,5 @@ class Producao extends BaseController
 
         return redirect()->route('form_producao')->with('success', 'Produção excluida com suceso!');
     }
+
 }
