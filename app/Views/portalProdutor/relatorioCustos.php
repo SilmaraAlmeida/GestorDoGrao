@@ -8,32 +8,32 @@
         <table class="table">
             <thead>
                 <th>
+                <th>Data de Registro</th>
                 <th>Custos de Insumo</th>
                 <th>Mão de Obra</th>
                 <th>Máquina e Equipamentos</th>
                 <th>Irrigação</th>
                 <th>Serviço Terceirizados</th>
-                <th>Metodos de Cultivo</th>
                 <th>Receitas</th>
                 <th>Total</th>
                 </th>
             </thead>
             <tbody>
-                <?php foreach ($producoes as $producao): ?>
+                <?php foreach ($custos as $custo): ?>
                     <tr>
                         <td></td>
-                        <td><?php echo $producao['nome_completo'] ?></td>
-                        <td><?php echo $producao['estado'] ?></td>
-                        <td><?php echo $producao['cidade'] ?></td>
-                        <td><?php echo $producao['area_plantada'] ?></td>
-                        <td><?php echo $producao['variedade_cafe'] ?></td>
-                        <td><?php echo $producao['metodos_cultivo'] ?></td>
-                        <td><?php echo $producao['producao_safra'] ?></td>
-                        <td>
-                            <?php echo anchor('portalProdutor/formVisualizarProducao/' . $producao['id'], "<i class='bx bx-low-vision text-success'></i>") ?>
-                            <?php echo anchor('portalProdutor/formEditarProducao/' . $producao['id'], "<i class='bx bx-pencil text-success'></i>") ?>
-                            <?php echo anchor('portalProdutor/deletarProducao/' . $producao['id'], "<i class='bx bx-trash text-success'></i>") ?>
-                        </td>
+                        <td><?php echo $custo['data_registro'] ?></td>
+                        <td><?php echo $custo['custo_insumo'] ?></td>
+                        <td><?php echo $custo['mao_de_obra'] ?></td>
+                        <td><?php echo $custo['maquina_equipamentos'] ?></td>
+                        <td><?php echo $custo['irrigacao'] ?></td>
+                        <td><?php echo $custo['servicos_terceirizados'] ?></td>
+                        <td><?php echo $custo['receitas'] ?></td>
+                        <?php 
+                            $total = $custo['custo_insumo'] + $custo['mao_de_obra'] + $custo['maquina_equipamentos']
+                            + $custo['irrigacao'] + $custo['servicos_terceirizados'] + $custo['receitas'];
+                        ?>
+                        <td><?php echo $total ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

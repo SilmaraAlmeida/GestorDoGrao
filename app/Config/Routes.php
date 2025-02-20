@@ -30,7 +30,6 @@ $routes->get('/portalProdutor/historicoProducoes', 'NavbarPortal::chamarHistoric
 $routes->get('/portalProdutor/analiseProdutividade', 'NavbarPortal::chamarAnaliseProdutividade', ['as' => 'chamar_produtividade']);
 $routes->get('/portalProdutor/analiseMercado', 'NavbarPortal::chamarAnaliseMercado',             ['as' => 'chamar_mercado']);
 $routes->get('/portalProdutor/registroCustos', 'NavbarPortal::chamarRegistroCustos',             ['as' => 'chamar_custos']);
-$routes->get('/portalProdutor/relatorioCustos', 'NavbarPortal::chamarRelatorioCustos',           ['as' => 'chamar_relatorio_custos']);
 $routes->get('/portalProdutor/monitoramento', 'NavbarPortal::chamarMonitoramento',               ['as' => 'chamar_monitoramento']);
 $routes->get('/portalProdutor/configuracao', 'NavbarPortal::chamarConfiguracao',                 ['as' => 'chamar_configuracao']);
 $routes->get('/portalProdutor/perfil', 'NavbarPortal::chamarPerfil',                             ['as' => 'chamar_perfil']);
@@ -48,3 +47,4 @@ $routes->get('/portalProdutor/deletarProducao/(:any)', 'ModificarProducao::delet
 
 // OPÇÃO 'CONTROLE DE CUSTOS' NA NAVBAR DO PRODUTOR
 $routes->post('/portalProdutor/registroCustosStore', 'RegistroCustos::CadastrarGastos', ['as' => 'cadastrar_gastos']);
+$routes->get('/portalProdutor/relatorioCustos', 'RelatorioCustos::index', ['as' => 'relatorio_custos']);

@@ -15,8 +15,6 @@ class RegistroCustos extends BaseController
 
     public function CadastrarGastos()
     {
-        var_dump('cadastrar gastos');
-
         $custos = new Custos();
         $inserted = $custos->insert($this->request->getPost());
     

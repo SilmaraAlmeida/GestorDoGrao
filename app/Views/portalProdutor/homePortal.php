@@ -92,7 +92,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="<?= url_to('chamar_relatorio_custos') ?>" class="sidebar-link">
+                            <a href="<?= url_to('relatorio_custos') ?>" class="sidebar-link">
                                 Relatório de Custos
                             </a>
                         </li>
