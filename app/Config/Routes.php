@@ -45,3 +45,6 @@ $routes->get('/portalProdutor/formVisualizarProducao/(:any)', 'ModificarProducao
 $routes->get('/portalProdutor/formEditarProducao/(:any)', 'ModificarProducao::editar/$1', ['as' => 'form_editar_producao']);
 $routes->post('/portalProdutor/formEditarProducao/(:any)', 'ModificarProducao::update/$1', ['as' => 'form_editar_producao']);
 $routes->get('/portalProdutor/deletarProducao/(:any)', 'ModificarProducao::deletar/$1', ['as' => 'deletar_producao']);
+
+// OPÇÃO 'CONTROLE DE CUSTOS' NA NAVBAR DO PRODUTOR
+$routes->post('/portalProdutor/registroCustosStore', 'RegistroCustos::CadastrarGastos', ['as' => 'cadastrar_gastos']);
