@@ -8,7 +8,7 @@
 </style>
 
 <div class="text-center">
-    <h3 class="mt-5 mb-5">Formulário para registrar Custos</h3>
+    <h3 class="mt-5 mb-5">Formulário para registrar Custos (R$)</h3>
     <?php if (session()->has('error')): ?>
         <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
     <?php endif ?>
@@ -22,8 +22,8 @@
     <div class="row">
         <div class="col-md-6">
             <div class="form-group mt-4 mb-4">
-                <label for="custo_insumo">Custos de Insumos</label>
-                <input type="text" class="form-control" name="custos_insumos" id="custos_insumos" required>
+                <label for="custo_insumo">Insumos</label>
+                <input type="text" class="form-control" name="custo_insumo" id="custo_insumo" required>
             </div>
             <div class="form-group mt-4 mb-4">
                 <label for="mao_de_obra">Mão de Obra</label>

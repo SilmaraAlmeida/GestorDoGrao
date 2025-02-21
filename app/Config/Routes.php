@@ -48,3 +48,8 @@ $routes->get('/portalProdutor/deletarProducao/(:any)', 'ModificarProducao::delet
 // OPÇÃO 'CONTROLE DE CUSTOS' NA NAVBAR DO PRODUTOR
 $routes->post('/portalProdutor/registroCustosStore', 'RegistroCustos::CadastrarGastos', ['as' => 'cadastrar_gastos']);
 $routes->get('/portalProdutor/relatorioCustos', 'RelatorioCustos::index', ['as' => 'relatorio_custos']);
+
+// OPÇÃO 'VENDAS' NA NAVBAR DO PRODUTOR
+$routes->post('/portalProdutor/registrarVendas', 'Vendas::cadastrarVendas', ['as' => 'cadastrar_vendas']);
+
+$routes->get('/portalProdutor/historicoVendas', 'HistoricoVendas::historicoVendas', ['as' => 'historico_vendas']);

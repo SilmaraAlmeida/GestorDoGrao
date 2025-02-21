@@ -19,10 +19,11 @@
                 </th>
             </thead>
             <tbody>
+            <?php $totalTabela = 0 ?>
                 <?php foreach ($custos as $custo): ?>
                     <tr>
                         <td></td>
-                        <td><?php echo $custo['data_registro'] ?></td>
+                        <td><?php echo date('d-m-Y', strtotime(intval($custo['data_registro']))) ?></td>
                         <td><?php echo $custo['custo_insumo'] ?></td>
                         <td><?php echo $custo['mao_de_obra'] ?></td>
                         <td><?php echo $custo['maquina_equipamentos'] ?></td>
@@ -32,12 +33,16 @@
                         <?php 
                             $total = $custo['custo_insumo'] + $custo['mao_de_obra'] + $custo['maquina_equipamentos']
                             + $custo['irrigacao'] + $custo['servicos_terceirizados'] + $custo['receitas'];
+                            $totalTabela = $totalTabela + $total;
                         ?>
                         <td><?php echo $total ?></td>
                     </tr>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
             </tbody>
         </table>
     </div>
+</div>
+<div class="mt-5">
+    <p>Gastos Totais no Mês: <strong>R$<?php echo $totalTabela ?></strong></p>
 </div>
 <?php echo $this->endSection() ?>

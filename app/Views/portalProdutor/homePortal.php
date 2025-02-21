@@ -30,7 +30,7 @@
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
                         <i class='bx bxs-user-detail'></i>
-                        <span>Cadastro e Controle</span>
+                        <span>Produção</span>
                     </a>
                     <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="auth">
                         <li class="sidebar-item">
@@ -51,10 +51,22 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="<?= url_to('chamar_vendas') ?>" class="sidebar-link">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#vendas" aria-expanded="false" aria-controls="vendas">
                         <i class='bx bxs-cart-add'></i>
-                        <span>Cadastro de Vendas</span>
+                        <span>Vendas</span>
                     </a>
+                    <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="vendas">
+                        <li class="sidebar-item">
+                            <a href="<?= url_to('chamar_vendas') ?>" class="sidebar-link">
+                                Registrar Vendas
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="<?= url_to('historico_vendas') ?>" class="sidebar-link">
+                                Vendas Registradas
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="sidebar-item">
                     <a href="<?= url_to('chamar_estoque') ?>" class="sidebar-link">

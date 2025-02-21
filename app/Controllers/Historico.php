@@ -12,12 +12,5 @@ class Historico extends BaseController
     {
         //
     }
-    
-    public function historico($dados)
-    {
-        $historico = new ModelsHistorico();
 
-        return $historico->insert('historico', $dados);
-
-    }
 }
