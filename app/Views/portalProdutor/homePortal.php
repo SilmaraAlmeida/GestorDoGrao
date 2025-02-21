@@ -69,10 +69,22 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="<?= url_to('chamar_estoque') ?>" class="sidebar-link">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#estoque" aria-expanded="false" aria-controls="estoque">
                         <i class='bx bxs-box'></i>
                         <span>Controle de Estoque</span>
                     </a>
+                    <ul class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" id="estoque">
+                        <li class="sidebar-item">
+                            <a href="<?= url_to('chamar_cadastro') ?>" class="sidebar-link">
+                                Cadastro de Produtos
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="<?= url_to('estoque_atual') ?>" class="sidebar-link">
+                                Estoque Atual
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#analise" aria-expanded="false" aria-controls="analise">

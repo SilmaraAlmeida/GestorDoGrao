@@ -33,6 +33,7 @@ $routes->get('/portalProdutor/registroCustos', 'NavbarPortal::chamarRegistroCust
 $routes->get('/portalProdutor/monitoramento', 'NavbarPortal::chamarMonitoramento',               ['as' => 'chamar_monitoramento']);
 $routes->get('/portalProdutor/configuracao', 'NavbarPortal::chamarConfiguracao',                 ['as' => 'chamar_configuracao']);
 $routes->get('/portalProdutor/perfil', 'NavbarPortal::chamarPerfil',                             ['as' => 'chamar_perfil']);
+$routes->get('/portalProdutor/cadastroProduto', 'NavbarPortal::chamarCadastro',                  ['as' => 'chamar_cadastro']);
 
 // FUNCIONALIDADES DAS NAVBAR LATERAL DO PRODUTOR
 $routes->post('/portalProdutor/registrarProducoes/cadastrar', 'ModificarProducao::cadastrar', ['as' => 'cadastrar_producao']);
@@ -53,3 +54,8 @@ $routes->get('/portalProdutor/relatorioCustos', 'RelatorioCustos::index', ['as' 
 $routes->post('/portalProdutor/registrarVendas', 'Vendas::cadastrarVendas', ['as' => 'cadastrar_vendas']);
 
 $routes->get('/portalProdutor/historicoVendas', 'HistoricoVendas::historicoVendas', ['as' => 'historico_vendas']);
+
+// OPÇÃO 'CONTROLE DE ESTOQUE' NA NAVBAR DO PRODUTOR
+$routes->post('/portalProdutor/formCadastroProduto', 'CadastroProduto::cadastroProduto', ['as' => 'cadastro_produto']);
+
+$routes->get('/portalProdutor/estoqueAtual', 'EstoqueAtual::estoqueAtual', ['as' => 'estoque_atual']);

@@ -25,9 +25,4 @@ class CadastroControlePortal extends BaseController
         return redirect()->route('cadastrar_producao')->with('success', 'Produção cadastrada com sucesso');
     }
 
-    public function historicoProducoes()
-    {
-        var_dump('histórico produções');
-    }
-
 }

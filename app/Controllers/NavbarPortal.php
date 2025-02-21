@@ -32,6 +32,11 @@ class NavbarPortal extends BaseController
         return view('partials/header') . view('portalProdutor/controleEstoque');
     }
 
+    public function chamarCadastro()
+    {
+        return view('partials/header') . view('portalProdutor/cadastrarProduto');
+    }
+
     public function chamarHistoricoProducao()
     {
         return view('partials/header') . view('portalProdutor/historicoProducoes');
