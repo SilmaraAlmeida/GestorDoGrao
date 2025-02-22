@@ -10,8 +10,8 @@ A plataforma permitirá que os produtores cadastrem suas produções, comparem p
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
 - **Backend**: PHP, MySQL
 - **Framework**: CodeIgniter
+- **Bibliotecas**: Chart.js
 
-## Como Executar
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuusuario/gestor-do-grao.git
+## Home
+
+![image](https://github.com/user-attachments/assets/c2307c50-2e4f-4697-a238-a1b2cdced77c)
