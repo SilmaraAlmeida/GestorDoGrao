@@ -16,7 +16,6 @@
 .card:hover {
     background-color: #006135;
     color: #fff;
-    transform: translateY(-3px);
 }
 
 .table thead {
