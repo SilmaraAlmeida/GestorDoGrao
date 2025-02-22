@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href=" <?= base_url('css/sidebar-portal.css') ?> ">
     <link rel="stylesheet" href=" <?= base_url('css/navbar-portal.css') ?> ">
+    <link rel="stylesheet" href=" <?= base_url('css/monitoramento.css') ?> ">
+
 </head>
 
 <body>
@@ -160,8 +162,9 @@
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
-                            <a href="#" data-bs-target="dropdown" class="nav-icon pe-md-0">
-                                <p><?php echo session()->get('user')->nome ?> <img src="<?= base_url('uploads/user-sem-foto.png') ?>" class="avatar img-fluid" alt=""></p>
+                            <a href="#" class="nav-link d-flex align-items-center" data-bs-toggle="dropdown">
+                                <span class="me-2"><?php echo session()->get('user')->nome ?></span>
+                                <img src="<?= base_url('uploads/user-sem-foto.png') ?>" class="avatar img-fluid" alt="">
                             </a>
                             <div class="dropdown-menu dropdown-menu-end rounded-0 border-0 shadow mt-3">
                                 <a href="#" class="dropdown-item">
@@ -172,10 +175,11 @@
                                     <i class='bx bx-cog'></i>
                                     <span>Config</span>
                                 </a>
-                                <div class="dropdown-divider">
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
                                     <i class='bx bx-circle'></i>
                                     <span>Central de Ajuda</span>
-                                </div>
+                                </a>
                             </div>
                         </li>
                     </ul>

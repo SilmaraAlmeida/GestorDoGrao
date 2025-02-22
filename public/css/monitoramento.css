@@ -1,0 +1,39 @@
+.card {
+    background-color: #fff;
+    transition: .4s;
+    cursor: pointer;
+    color: #000;
+    margin-bottom: 1rem;
+    border-color: rgba(231, 234, 243, 0.7);
+}
+
+.card h6 {
+    text-transform: uppercase;
+    font-size: .7161rem;
+    margin-bottom: .25rem;
+}
+
+.card:hover {
+    background-color: #006135;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.table thead {
+    color: #fff;
+    text-align: left;
+}
+
+.highlight th {
+    background-color: #006135;
+    color: #fff;
+}
+
+.content {
+    flex: 11 auto;
+}
+
+footer {
+    background-color: #fff;
+    padding: 1rem .875rem;
+}

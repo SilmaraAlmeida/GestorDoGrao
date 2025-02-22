@@ -53,7 +53,7 @@
                     <h3 class="fw-bold my-3">Users</h3>
                     <table class="table table-striped">
                         <thead>
-                            <tr>
+                            <tr class="highlight">
                                 <th scope="col">#</th>
                                 <th scope="col">First</th>
                                 <th scope="col">Last</th>
