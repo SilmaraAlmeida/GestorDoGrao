@@ -22,6 +22,7 @@ class ProducaoCafe extends Model
         'variedade_cafe',
         'metodos_cultivo',
         'producao_safra',
+        'user_id'
     ];
 
     protected bool $allowEmptyInserts = false;
