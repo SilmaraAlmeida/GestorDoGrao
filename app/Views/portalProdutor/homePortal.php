@@ -161,7 +161,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a href="#" data-bs-target="dropdown" class="nav-icon pe-md-0">
-                                <p><?php echo session()->get('user')->nome ?><img src="<?= base_url('uploads/background-login-cadastro.png') ?>" class="avatar img-fluid" alt=""></p>
+                                <p><?php echo session()->get('user')->nome ?> <img src="<?= base_url('uploads/user-sem-foto.png') ?>" class="avatar img-fluid" alt=""></p>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end rounded-0 border-0 shadow mt-3">
                                 <a href="#" class="dropdown-item">
@@ -188,7 +188,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src=" <?= base_url('js/navbar-portal.js') ?> "></script>
+    <script src=" <?= base_url('js/monitoramento.js') ?> "></script>
+
 </body>
 
 </html>
