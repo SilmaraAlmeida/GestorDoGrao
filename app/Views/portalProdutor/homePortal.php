@@ -149,6 +149,7 @@
         </aside>
         <div class="main container">
             <p class="text text-center">Olá, <?php echo session()->get('user')->nome ?>!</p>
+            <?php echo session()->get('user_id') ?>
             <?= $this->renderSection('content') ?>
         </div>
     </div>

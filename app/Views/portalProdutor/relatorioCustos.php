@@ -23,7 +23,7 @@
                 <?php foreach ($custos as $custo): ?>
                     <tr>
                         <td></td>
-                        <td><?php echo date('d-m-Y', strtotime(intval($custo['data_registro']))) ?></td>
+                        <td><?php echo $custo['data_registro'] ?></td>
                         <td><?php echo $custo['custo_insumo'] ?></td>
                         <td><?php echo $custo['mao_de_obra'] ?></td>
                         <td><?php echo $custo['maquina_equipamentos'] ?></td>

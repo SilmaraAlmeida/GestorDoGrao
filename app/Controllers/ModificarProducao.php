@@ -19,8 +19,11 @@ class ModificarProducao extends BaseController
 
     public function index()
     {
+        $user_id = session()->get('user_id');
+        $producoes = $this->producao->where('user_id', $user_id)->findAll();
+
         return view('partials/header') . view('portalProdutor/modificarProducoes', [
-            'producoes' => $this->producao->findAll(),
+            'producoes' => $producoes,
         ]);
     }
 
@@ -28,13 +31,19 @@ class ModificarProducao extends BaseController
     {
         $producao = new ProducaoCafe();
 
-        $inserted = $producao->insert($this->request->getPost());
+        $user_id = session()->get('user_id');
+
+        $data = $this->request->getPost();
+
+        $data['user_id'] = $user_id;
+
+        $inserted = $producao->insert($data);
 
         if (!$inserted) {
-            return redirect()->route('chamar_registrar')->with('error', 'Não foi possivel cadastrar a produção, tente novamente');
+            return redirect()->route('form_producao')->with('error', 'Ocorreu um erro o cadastrar a produção');
         }
 
-        return redirect()->route('chamar_registrar')->with('success', 'Produção cadastrada com sucesso!');
+        return redirect()->route('form_producao')->with('success', 'Produção cadastrada com sucesso');
     }
 
     public function visualizar($id)
@@ -71,5 +80,4 @@ class ModificarProducao extends BaseController
 
         return redirect()->route('form_producao')->with('success', 'Produção excluida com suceso!');
     }
-
 }

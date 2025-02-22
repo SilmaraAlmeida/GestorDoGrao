@@ -15,14 +15,25 @@ class CadastroControlePortal extends BaseController
 
     public function registrarProducoes()
     {
-        $producao = new ProducaoCafe();
-        $inserted = $producao->insert($this->request->getPost());
 
-        if (!$inserted) {
-            return redirect()->route('cadastrar_producao')->with('error', 'Ocorreu um erro o cadastrar a produção');
-        }
+        // $producao = new ProducaoCafe();
 
-        return redirect()->route('cadastrar_producao')->with('success', 'Produção cadastrada com sucesso');
+        // $user_id = session()->get('user_id');
+
+        // $data = $this->request->getPost();
+
+        // $data['user_id'] = $user_id;
+
+        // var_dump($data);
+        // die();
+
+        // $inserted = $estoque->insert($data);
+
+        // if (!$inserted) {
+        //     return redirect()->route('cadastrar_producao')->with('error', 'Ocorreu um erro o cadastrar a produção');
+        // }
+
+        // return redirect()->route('cadastrar_producao')->with('success', 'Produção cadastrada com sucesso');
     }
 
 }
