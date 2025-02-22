@@ -182,7 +182,35 @@
                 </div>
             </nav>
             <p>user_name: <?php echo session()->get('user')->nome ?> <br> user_id: <?php echo session()->get('user_id') ?></p>
+
             <?= $this->renderSection('content') ?>
+
+            <body class="d-flex flex-column min-vh-100">
+                <footer class="footer mt-auto py-3 bg-light">
+                    <div class="container-fluid">
+                        <div class="row text-body-secondary">
+                            <div class="col-6 text-start">
+                                <a href="#" class="text-body-secondary">
+                                    <strong>Gestor do Grão</strong>
+                                </a>
+                            </div>
+                            <div class="col-6 text-end text-body-secondary d-none d-md-block">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-body-secondary">Contato</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-body-secondary">Sobre</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-body-secondary">Termos & Condições</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </body>
         </div>
     </div>
 

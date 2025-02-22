@@ -11,3 +11,8 @@
     height: 40px;
     width: 40px;
 }
+
+.footer {
+    background-color: #fff !important;
+    box-shadow: 0 0 2rem 0 rgba(33, 37, 41, .1);
+}

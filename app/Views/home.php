@@ -2,7 +2,7 @@
 <header>
     <div class="header-overlay">
         <h2>O Futuro da Gestão do Café na Palma da Sua Mão</h2>
-        <p>Redistre sua colheita, compare preços e maximize seus lucros com facilidade!</p>
+        <p>Registre sua colheita, compare preços e maximize seus lucros com facilidade!</p>
         <button class="saiba-mais"><a href="#sobre">Saiba Mais</a></button>
     </div>
 </header>
