@@ -14,6 +14,7 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="stylesheet" href=" <?= base_url('css/sidebar-portal.css') ?> ">
     <link rel="stylesheet" href=" <?= base_url('css/navbar-portal.css') ?> ">
 </head>
 
@@ -147,9 +148,40 @@
                 </a>
             </div>
         </aside>
-        <div class="main container">
-            <p class="text text-center">Olá, <?php echo session()->get('user')->nome ?>!</p>
-            <?php echo session()->get('user_id') ?>
+        <div class="main">
+            <nav class="navbar navbar-expand px-4 py-3">
+                <form action="#" class="d-none d-sm-inline-block">
+                    <div class="input-group input-group-navbar">
+                        <input type="text" class="form-control border-0 rounded-0 pe-0" placeholder="Pesquisar..." aria-label="Pesquisar">
+                        <button class="btn border-0 rounded-0" type="button"><i class='bx bx-search'></i></button>
+                    </div>
+                </form>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-target="dropdown" class="nav-icon pe-md-0">
+                                <p><?php echo session()->get('user')->nome ?><img src="<?= base_url('uploads/background-login-cadastro.png') ?>" class="avatar img-fluid" alt=""></p>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end rounded-0 border-0 shadow mt-3">
+                                <a href="#" class="dropdown-item">
+                                    <i class='bx bx-data'></i>
+                                    <span>Seu Perfil</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <i class='bx bx-cog'></i>
+                                    <span>Config</span>
+                                </a>
+                                <div class="dropdown-divider">
+                                    <i class='bx bx-circle'></i>
+                                    <span>Central de Ajuda</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <p>user_name: <?php echo session()->get('user')->nome ?> <br> user_id: <?php echo session()->get('user_id') ?></p>
             <?= $this->renderSection('content') ?>
         </div>
     </div>
