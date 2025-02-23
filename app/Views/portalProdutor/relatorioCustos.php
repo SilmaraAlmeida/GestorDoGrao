@@ -22,7 +22,7 @@
                 </th>
             </thead>
             <tbody>
-            <?php $totalTabela = 0 ?>
+                <?php $totalTabela = 0 ?>
                 <?php foreach ($custos as $custo): ?>
                     <tr>
                         <td></td>
@@ -33,25 +33,30 @@
                         <td><?php echo $custo['irrigacao'] ?></td>
                         <td><?php echo $custo['servicos_terceirizados'] ?></td>
                         <td><?php echo $custo['receitas'] ?></td>
-                        <?php 
-                            $total = $custo['custo_insumo'] + $custo['mao_de_obra'] + $custo['maquina_equipamentos']
+                        <?php
+                        $total = $custo['custo_insumo'] + $custo['mao_de_obra'] + $custo['maquina_equipamentos']
                             + $custo['irrigacao'] + $custo['servicos_terceirizados'] + $custo['receitas'];
-                            $totalTabela = $totalTabela + $total;
+                        $totalTabela = $totalTabela + $total;
                         ?>
                         <td><?php echo $total ?></td>
                     </tr>
-                    <?php endforeach; ?>
+                <?php endforeach; ?>
             </tbody>
         </table>
     </div>
 </div>
+
+<?php
+session()->set('totalGasto', $totalTabela);
+?>
+
 <div class="container mt-5 mb-5">
     <div class="mt-5 card border-0 shadow-lg" style="background-color: #eaf4e0; border-radius: 12px;">
         <div class="card-body">
             <h3 class="card-title text-dark" style="color: #2d6a4f;">💰 Gastos Totais no Mês</h3>
             <p class="card-text" style="color: #3a5a40;">Aqui está um resumo dos seus gastos acumulados no mês. Mantenha o controle para um planejamento financeiro mais eficiente.</p>
             <div class="alert mt-3" style="background-color: #40916c; color: #fff; border-radius: 8px; text-align: center;">
-                <strong>Gastos Totais no Mês:</strong>  
+                <strong>Gastos Totais no Mês:</strong>
                 <p class="fs-4 mb-0" style="color: #d8f3dc;">R$<?php echo number_format($totalTabela, 2, ',', '.'); ?></p>
             </div>
             <a href="#" class="btn text-white w-100" style="background-color: #2d6a4f; border-radius: 8px;">📉 Ver Detalhes dos Gastos</a>

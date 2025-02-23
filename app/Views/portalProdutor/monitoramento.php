@@ -1,5 +1,6 @@
 <?php echo $this->extend('portalProdutor/homePortal') ?>
 <?php echo $this->section('content') ?>
+
 <main class="container content px-3 py-3">
     <div class="conteiner-fluid">
         <div class="mb-3">
@@ -14,7 +15,10 @@
                                 Total Faturado
                             </h6>
                             <p class="fw-bold mb-2">
-                                R$7.000,00
+                                <?php
+                                $totalFaturado = session()->get('totalFaturado');
+                                echo 'R$' . number_format($totalFaturado, 2, ',', '.');
+                                ?>
                             </p>
                             <div class="mb-0">
                                 <span class="bagde text-success me-2">
@@ -34,7 +38,10 @@
                                 Total Gasto
                             </h6>
                             <p class="fw-bold mb-2">
-                                R$5.000,00
+                                <?php
+                                $totalGasto = session()->get('totalGasto');
+                                echo 'R$' . number_format($totalGasto, 2, ',', '.');
+                                ?>
                             </p>
                             <div class="mb-0">
                                 <span class="bagde text-danger me-2">
@@ -50,7 +57,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-12 col-md-7">
-                    <h3 class="fw-bold my-3">Users</h3>
+                    <h3 class="fw-bold my-3">Produtor - Produções Cadastradas</h3>
                     <table class="table table-striped">
                         <thead>
                             <tr class="highlight">
