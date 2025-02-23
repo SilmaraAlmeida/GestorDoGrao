@@ -8,11 +8,11 @@
                 Dashboard do Produtor
             </h3>
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                     <div class="card shadow">
                         <div class="card-body py-4">
                             <h6 class="mb-2 fw-bold">
-                                Total Faturado
+                                Valor Bruto Faturado
                             </h6>
                             <p class="fw-bold mb-2">
                                 <?php
@@ -31,11 +31,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                     <div class="card shadow">
                         <div class="card-body py-4">
                             <h6 class="mb-2 fw-bold">
-                                Total Gasto
+                                Valor Gasto
                             </h6>
                             <p class="fw-bold mb-2">
                                 <?php
@@ -46,6 +46,30 @@
                             <div class="mb-0">
                                 <span class="bagde text-danger me-2">
                                     -4.0%
+                                </span>
+                                <span class="fw-bold">
+                                    Desde o mês passado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body py-4">
+                            <h6 class="mb-2 fw-bold">
+                                Valor Final Faturado
+                            </h6>
+                            <p class="fw-bold mb-2">
+                                <?php
+                                $valorFinal = $totalFaturado - $totalGasto;
+
+                                echo 'R$' . number_format($valorFinal, 2, ',', '.');
+                                ?>
+                            </p>
+                            <div class="mb-0">
+                                <span class="bagde text-success me-2">
+                                    4.5%
                                 </span>
                                 <span class="fw-bold">
                                     Desde o mês passado
