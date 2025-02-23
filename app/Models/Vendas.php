@@ -18,7 +18,8 @@ class Vendas extends Model
         'cliente',
         'produto',
         'quantidade',
-        'preco_unitario'
+        'preco_unitario',
+        'user_id'
     ];
 
     protected bool $allowEmptyInserts = false;

@@ -22,8 +22,11 @@ class HistoricoVendas extends BaseController
 
     public function historicoVendas()
     {
+        $user_id = session()->get('user_id');
+        $vendas = $this->vendas->where('user_id', $user_id)->findAll();
+
         return view('partials/header') . view('portalProdutor/historicoVendas', [
-            'vendas' => $this->vendas->findAll(),
+            'vendas' => $vendas,
         ]);
     }
 }

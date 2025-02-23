@@ -12,16 +12,23 @@ class Vendas extends BaseController
     {
         //
     }
-    
+
     public function cadastrarVendas()
     {
         $vendas = new ModelsVendas();
-        $inserted = $vendas->insert($this->request->getPost());
-    
+
+        $user_id = session()->get('user_id');
+
+        $data = $this->request->getPost();
+
+        $data['user_id'] = $user_id;
+
+        $inserted = $vendas->insert($data); 
+
         if (!$inserted) {
             return redirect()->route('chamar_vendas')->with('error', 'Ocorreu um erro o cadastrar a venda');
         }
-    
+
         return redirect()->route('chamar_vendas')->with('success', 'Venda cadastrada com sucesso');
     }
 }
