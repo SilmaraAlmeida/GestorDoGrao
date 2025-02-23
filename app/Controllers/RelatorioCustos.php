@@ -17,8 +17,11 @@ class RelatorioCustos extends BaseController
 
     public function index()
     {
+        $user_id = session()->get('user_id');
+        $custos = $this->custos->where('user_id', $user_id)->findAll();
+
         return view('partials/header') . view('portalProdutor/relatorioCustos', [
-            'custos' => $this->custos->findAll(),
+            'custos' => $custos,
         ]);
     }
 }

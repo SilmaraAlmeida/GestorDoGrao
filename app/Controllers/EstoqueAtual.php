@@ -22,8 +22,11 @@ class EstoqueAtual extends BaseController
 
     public function estoqueAtual()
     {
+        $user_id = session()->get('user_id');
+        $estoque = $this->estoque->where('user_id', $user_id)->findAll();
+
         return view('partials/header') . view('portalProdutor/estoqueAtual', [
-            'dados' => $this->estoque->findAll()
+            'dados' => $estoque
         ]);
     }
 }

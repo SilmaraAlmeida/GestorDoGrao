@@ -22,7 +22,8 @@ class Estoque extends Model
         'preco_venda',
         'fornecedor',
         'data_compra',
-        'notas_adicionais'
+        'notas_adicionais',
+        'user_id'
     ];
 
     protected bool $allowEmptyInserts = false;

@@ -22,6 +22,7 @@ class Custos extends Model
         'servicos_terceirizados',
         'metodos_cultivo',
         'receitas',
+        'user_id'
     ];
 
     protected bool $allowEmptyInserts = false;

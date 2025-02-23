@@ -12,13 +12,13 @@ class CustosPortal extends BaseController
         //
     }
 
-    public function registroCustos()
-    {
-        var_dump('registro custos');
-    }
+    // public function registroCustos()
+    // {
+    //     var_dump('registro custos');
+    // }
 
-    public function relatorioCustos()
-    {
-        var_dump('relatorio custos');
-    }
+    // public function relatorioCustos()
+    // {
+    //     var_dump('relatorio custos');
+    // }
 }

@@ -16,7 +16,14 @@ class CadastroProduto extends BaseController
     public function cadastroProduto()
     {
         $estoque = new Estoque();
-        $inserted = $estoque->insert($this->request->getPost());
+
+        $user_id = session()->get('user_id');
+
+        $data = $this->request->getPost();
+
+        $data['user_id'] = $user_id;
+
+        $inserted = $estoque->insert($data);
 
         if (!$inserted) {
             return redirect()->route('chamar_cadastro')->with('error', 'Ocorreu um erro o cadastrar o produto');

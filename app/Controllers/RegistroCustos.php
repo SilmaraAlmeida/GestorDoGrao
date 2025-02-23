@@ -16,7 +16,14 @@ class RegistroCustos extends BaseController
     public function CadastrarGastos()
     {
         $custos = new Custos();
-        $inserted = $custos->insert($this->request->getPost());
+
+        $user_id = session()->get('user_id');
+
+        $data = $this->request->getPost();
+
+        $data['user_id'] = $user_id;
+
+        $inserted = $custos->insert($data);
     
         if (!$inserted) {
             return redirect()->route('chamar_custos')->with('error', 'Ocorreu um erro o cadastrar os valores');
