@@ -31,9 +31,9 @@
                     <td><?php echo $venda['cliente'] ?></td>
                     <td><?php echo $venda['produto'] ?></td>
                     <td><?php echo $venda['quantidade'] ?></td>
-                    <td><?php echo $venda['preco_unitario'] ?></td>
+                    <td><?php echo number_format($venda['preco_unitario'], 2, ',', '.') ?></td>
                     <?php $totalGanho = $venda['quantidade'] * $venda['preco_unitario'] ?>
-                    <td><?php echo $totalGanho ?></td>
+                    <td><?php echo number_format($totalGanho, 2, ',', '.') ?></td>
 
                     <?php $totalFaturado = $totalFaturado + $totalGanho ?>
 

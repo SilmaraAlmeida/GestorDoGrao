@@ -27,8 +27,8 @@
                     <td><?= $dado['tipo_cafe'] ?></td>
                     <td><?= $dado['categoria'] ?></td>
                     <td><?= $dado['quantidade_estoque'] ?></td>
-                    <td><?= $dado['preco_compra'] ?></td>
-                    <td><?= $dado['preco_venda'] ?></td>
+                    <td><?= number_format($dado['preco_compra'], 2, ',', '.') ?></td>
+                    <td><?= number_format($dado['preco_venda'], 2, ',', '.') ?></td>
                     <td><?= $dado['fornecedor'] ?></td>
                     <td><?= $dado['data_compra'] ?></td>
                     <td><?= $dado['notas_adicionais'] ?></td>

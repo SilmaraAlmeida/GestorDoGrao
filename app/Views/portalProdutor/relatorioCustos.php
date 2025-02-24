@@ -27,18 +27,18 @@
                     <tr>
                         <td></td>
                         <td><?php echo $custo['data_registro'] ?></td>
-                        <td><?php echo $custo['custo_insumo'] ?></td>
-                        <td><?php echo $custo['mao_de_obra'] ?></td>
-                        <td><?php echo $custo['maquina_equipamentos'] ?></td>
-                        <td><?php echo $custo['irrigacao'] ?></td>
-                        <td><?php echo $custo['servicos_terceirizados'] ?></td>
-                        <td><?php echo $custo['receitas'] ?></td>
+                        <td><?php echo number_format($custo['custo_insumo'], 2, ',', '.') ?></td>
+                        <td><?php echo number_format($custo['mao_de_obra'], 2, ',', '.') ?></td>
+                        <td><?php echo number_format($custo['maquina_equipamentos'], 2, ',', '.') ?></td>
+                        <td><?php echo number_format($custo['irrigacao'], 2, ',', '.') ?></td>
+                        <td><?php echo number_format($custo['servicos_terceirizados'], 2, ',', '.') ?></td>
+                        <td><?php echo number_format($custo['receitas'], 2, ',', '.') ?></td>
                         <?php
                         $total = $custo['custo_insumo'] + $custo['mao_de_obra'] + $custo['maquina_equipamentos']
                             + $custo['irrigacao'] + $custo['servicos_terceirizados'] + $custo['receitas'];
                         $totalTabela = $totalTabela + $total;
                         ?>
-                        <td><?php echo $total ?></td>
+                        <td><?php echo number_format($total, 2, ',', '.') ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -57,7 +57,7 @@ session()->set('totalGasto', $totalTabela);
             <p class="card-text" style="color: #3a5a40;">Aqui está um resumo dos seus gastos acumulados no mês. Mantenha o controle para um planejamento financeiro mais eficiente.</p>
             <div class="alert mt-3" style="background-color: #40916c; color: #fff; border-radius: 8px; text-align: center;">
                 <strong>Gastos Totais no Mês:</strong>
-                <p class="fs-4 mb-0" style="color: #d8f3dc;">R$<?php echo number_format($totalTabela, 2, ',', '.'); ?></p>
+                <p class="fs-4 mb-0" style="color: #d8f3dc;">R$<?php echo number_format($totalTabela, 2, ',', '.') ?></p>
             </div>
             <a href="#" class="btn text-white w-100" style="background-color: #2d6a4f; border-radius: 8px;">📉 Ver Detalhes dos Gastos</a>
         </div>
