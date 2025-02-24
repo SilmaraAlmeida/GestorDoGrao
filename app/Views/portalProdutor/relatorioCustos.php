@@ -59,7 +59,7 @@ session()->set('totalGasto', $totalTabela);
                 <strong>Gastos Totais no Mês:</strong>
                 <p class="fs-4 mb-0" style="color: #d8f3dc;">R$<?php echo number_format($totalTabela, 2, ',', '.') ?></p>
             </div>
-            <a href="#" class="btn text-white w-100" style="background-color: #2d6a4f; border-radius: 8px;">📉 Ver Detalhes dos Gastos</a>
+            <a href=" <?= url_to('relatorio_pdf_custos') ?> " class="btn text-white w-100" style="background-color: #2d6a4f; border-radius: 8px;">📉 Ver Detalhes dos Gastos</a>
         </div>
     </div>
 </div>

@@ -64,3 +64,5 @@ $routes->get('/portalProdutor/estoqueAtual', 'EstoqueAtual::estoqueAtual', ['as'
 // OPÇÃO 'MONITORAMENTO' NA NAVBAR DO PRODUTOR
 $routes->get('/portalProdutor/monitoramento', 'Monitoramento::chamarMonitoramento', ['as' => 'chamar_monitoramento']);
 // $routes->get('/portalProdutor/monitoramento', 'NavbarPortal::chamarMonitoramento', ['as' => 'chamar_monitoramento']);
+
+$routes->get('/portalProdutor/relatorioCustoPdf', 'RelatorioCustoPdf::gerarRelatorio', ['as' => 'relatorio_pdf_custos']);
