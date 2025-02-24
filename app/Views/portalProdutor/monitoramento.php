@@ -80,40 +80,33 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-md-6">
                     <h3 class="fw-bold my-3">Produtor - Produções Cadastradas</h3>
                     <table class="table table-striped">
                         <thead>
                             <tr class="highlight">
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Produtor</th>
+                                <th scope="col">Produções</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
+                            <?php foreach ($usuarios as $usuario): ?>
+                                <tr>
+                                    <th scope="row"><?php echo $usuario->nome; ?></th>
+
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
+
                 </div>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-6">
                     <h3 class="fw-bold fs-4 my-3">
                         Visão geral dos relatórios
                     </h3>

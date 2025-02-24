@@ -13,6 +13,9 @@
     <!-- ICON -->
     <link rel="icon" href="<?= base_url('uploads/cafe-favicon.png') ?>" type="image/x-icon">
 
+    <!-- DATA TABLE  CSS-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href=" <?= base_url('css/navbar.css') ?> ">
     <link rel="stylesheet" href=" <?= base_url('css/about.css') ?> ">
