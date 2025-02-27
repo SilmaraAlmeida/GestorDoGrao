@@ -15,12 +15,5 @@
 <div class="container mt-5">
     <h2 class="text-center">📊 Relatórios do Café</h2>
 
-    <div class="mt-4 p-4 bg-light rounded card-relatorio">
-        <h3>📈 Análise de Mercado</h3>
-        <p><strong>Produto Mais Vendido:</strong> Café Arábica</p>
-        <p><strong>Quantidade Vendida:</strong> 8.000 kg</p>
-        <p><strong>Preço Médio de Venda:</strong> R$ 25,00</p>
-        <p><strong>Receita Total:</strong> R$ 200.000</p>
-    </div>
 </div>
 <?php echo $this->endSection() ?>
