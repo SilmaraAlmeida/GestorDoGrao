@@ -18,7 +18,7 @@
             <span class="text text-success"><?= session()->getFlashdata('success') ?></span>
         <?php endif ?>
     </div>
-    
+
     <form action="<?= url_to('cadastrar_gastos') ?>" method="post">
         <div class="row">
             <div class="col-md-6">
@@ -56,5 +56,18 @@
         </div>
     </form>
 </div>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script>
+    $('#custo_insumo').mask("#.##0,00", {reverse: true});
+    $('#mao_de_obra').mask("#.##0,00", {reverse: true});
+    $('#maquina_equipamentos').mask("#.##0,00", {reverse: true});
+    $('#irrigacao').mask("#.##0,00", {reverse: true});
+    $('#servicos_terceirizados').mask("#.##0,00", {reverse: true});
+    $('#receitas').mask("#.##0,00", {reverse: true});
+</script>
 
 <?php echo $this->endSection() ?>

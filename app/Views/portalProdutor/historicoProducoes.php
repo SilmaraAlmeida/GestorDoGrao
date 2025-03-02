@@ -46,7 +46,7 @@
                 </tbody>
             </table>
         <?php else: ?>
-            <h2 class="text-center mb-4">Nenhuma alteração registrada.</h2>
+            <h4 class="text-center mb-4">Nenhuma alteração registrada.</h4>
         <?php endif; ?>
     </div>
 </div>

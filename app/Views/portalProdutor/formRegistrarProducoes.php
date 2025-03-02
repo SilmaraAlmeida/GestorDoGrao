@@ -35,7 +35,7 @@
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Ex.: (XX) XXXXX-XXXX" required>
+                    <input id="phone" type="tel" class="form-control" name="telefone" id="telefone" placeholder="Ex.: (XX) XXXX-XXXX" required>
                 </div>
             </div>
     
@@ -77,5 +77,13 @@
         <p><strong>Cultivo Orgânico</strong> -> Evita pesticidas e fertilizantes químicos, utilizando métodos naturais para controle de pragas e fertilização do solo.</p>
     </div>
 </div>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script>
+    $('#phone').mask('(00) 0000-0000');
+</script>
 
 <?php echo $this->endSection() ?>

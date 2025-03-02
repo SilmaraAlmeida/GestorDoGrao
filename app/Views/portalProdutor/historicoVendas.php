@@ -27,13 +27,7 @@
             <?php foreach ($vendas as $venda): ?>
                 <tr>
                     <td></td>
-                    <?php
-                    $oldData = $venda['data_venda'];
-                    $timestamp = strtotime($oldData);
-
-                    $newData = date('d/m/Y', $timestamp);
-                    ?>
-                    <td><?php echo $newData ?></td>
+                    <td><?php echo $venda['data_venda'] ?></td>
                     <td><?php echo $venda['cliente'] ?></td>
                     <td><?php echo $venda['produto'] ?></td>
                     <td><?php echo $venda['quantidade'] ?></td>

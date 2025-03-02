@@ -40,14 +40,14 @@
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="preco_compra">Preço de Compra</label>
-                    <input type="text" class="form-control" name="preco_compra" id="preco_compra" required>
+                    <input id="money" type="text" class="form-control" name="preco_compra" id="preco_compra" required>
                 </div>
             </div>
     
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="preco_venda">Preço de Venda</label>
-                    <input type="text" class="form-control" name="preco_venda" id="preco_venda" required>
+                    <input id="money2" type="text" class="form-control" name="preco_venda" id="preco_venda" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="fornecedor">Fornecedor</label>
@@ -68,5 +68,16 @@
         </div>
     </form>
 </div>
+
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script>
+    $('#money').mask("#.##0,00", {reverse: true});
+    $('#money2').mask("#.##0,00", {reverse: true});
+</script>
+
 
 <?php echo $this->endSection() ?>

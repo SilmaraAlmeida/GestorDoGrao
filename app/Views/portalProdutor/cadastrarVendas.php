@@ -13,18 +13,18 @@
         <?php if (session()->has('error')): ?>
             <span class="text text-danger"><?= session()->getFlashdata('error') ?></span>
         <?php endif ?>
-        
+
         <?php if (session()->has('success')): ?>
             <span class="text text-success"><?= session()->getFlashdata('success') ?></span>
         <?php endif ?>
     </div>
-    
+
     <form action="<?= url_to('cadastrar_vendas') ?>" method="post">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="data_venda">Data da Venda</label>
-                    <input type="text" class="form-control" name="data_venda" id="data_venda" required>
+                    <input id="date" type="text" class="form-control" name="data_venda" id="data_venda" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="cliente">Cliente</label>
@@ -35,7 +35,7 @@
                     <input type="text" class="form-control" name="produto" id="produto" required>
                 </div>
             </div>
-    
+
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="quantidade">Quantidade</label>
@@ -52,5 +52,13 @@
         </div>
     </form>
 </div>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script>
+    $('#date').mask('00/00/0000');
+</script>
 
 <?php echo $this->endSection() ?>
