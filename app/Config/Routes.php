@@ -26,7 +26,6 @@ $routes->get('/portalProdutor', 'PortalProdutor::index', ['as' => 'portal_produt
 $routes->get('/portalProdutor/registrarProducoes', 'NavbarPortal::chamarRegistrarProducoes',     ['as' => 'chamar_registrar']);
 $routes->get('/portalProdutor/cadastrarVendas', 'NavbarPortal::chamarCadastrarVendas',           ['as' => 'chamar_vendas']);
 $routes->get('/portalProdutor/controleEstoque', 'NavbarPortal::chamarControleEstoque',           ['as' => 'chamar_estoque']);
-$routes->get('/portalProdutor/historicoProducoes', 'NavbarPortal::chamarHistoricoProducao',      ['as' => 'chamar_historico']);
 $routes->get('/portalProdutor/analiseProdutividade', 'NavbarPortal::chamarAnaliseProdutividade', ['as' => 'chamar_produtividade']);
 $routes->get('/portalProdutor/analiseMercado', 'NavbarPortal::chamarAnaliseMercado',             ['as' => 'chamar_mercado']);
 $routes->get('/portalProdutor/registroCustos', 'NavbarPortal::chamarRegistroCustos',             ['as' => 'chamar_custos']);
@@ -64,3 +63,6 @@ $routes->get('/portalProdutor/estoqueAtual', 'EstoqueAtual::estoqueAtual', ['as'
 // OPÇÃO 'MONITORAMENTO' NA NAVBAR DO PRODUTOR
 $routes->get('/portalProdutor/monitoramento', 'Monitoramento::chamarMonitoramento', ['as' => 'chamar_monitoramento']);
 // $routes->get('/portalProdutor/monitoramento', 'NavbarPortal::chamarMonitoramento', ['as' => 'chamar_monitoramento']);
+
+
+$routes->get('/portalProdutor/historicoProducoes', 'Historico::chamarHistoricoProducao',      ['as' => 'chamar_historico']);

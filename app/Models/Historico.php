@@ -14,7 +14,7 @@ class Historico extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         'id',
-        'nome_tabela',
+        'nome_producao',
         'nome_coluna',
         'valor_antigo',
         'novo_valor',
