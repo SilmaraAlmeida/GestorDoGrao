@@ -8,7 +8,7 @@
     <h5 class="mb-3">Gastos durante o Mês:</h5>
 
     <div class="container">
-        <table class="table">
+        <table class="table" id="tabela">
             <thead>
                 <th>
                 <th>Data de Registro</th>
@@ -63,4 +63,17 @@ session()->set('totalGasto', $totalTabela);
         </div>
     </div>
 </div>
+
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- DATA TABLE -->
+<script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#tabela').DataTable();
+    });
+</script>
+
 <?php echo $this->endSection() ?>
