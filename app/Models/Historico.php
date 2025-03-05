@@ -18,6 +18,7 @@ class Historico extends Model
         'nome_coluna',
         'valor_antigo',
         'novo_valor',
+        'novo_valor',
         'alterado_por',
         'alterado_em',
     ];
