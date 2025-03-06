@@ -23,7 +23,7 @@
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="nome_producao">Nome da Produção</label>
-                    <input type="text" class="form-control" name="nome_producao" id="nome_producao" placeholder="Ex.: José Silva" value="<?php echo $producoes['nome_producao'] ?? '' ?>" required>
+                    <input type="text" class="form-control" name="nome_producao" id="nome_producao" placeholder="Ex.: Produção do(a) <?= session()->get('user')->nome ?>" value="<?php echo $producoes['nome_producao'] ?? '' ?>" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="estado">Estado</label>

@@ -24,30 +24,30 @@
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="custo_insumo">Insumos</label>
-                    <input type="text" class="form-control" name="custo_insumo" id="custo_insumo" required>
+                    <input type="text" class="form-control" name="custo_insumo" id="custo_insumo" placeholder="Ex.: 150,89" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="mao_de_obra">Mão de Obra</label>
-                    <input type="text" class="form-control" name="mao_de_obra" id="mao_de_obra" required>
+                    <input type="text" class="form-control" name="mao_de_obra" id="mao_de_obra" placeholder="Ex.: 150,89" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="maquina_equipamentos">Máquinas e Equipamentos</label>
-                    <input type="text" class="form-control" name="maquina_equipamentos" id="maquina_equipamentos" required>
+                    <input type="text" class="form-control" name="maquina_equipamentos" id="maquina_equipamentos" placeholder="Ex.: 150,89" required>
                 </div>
             </div>
-    
+
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="irrigacao">Irrigação</label>
-                    <input type="text" class="form-control" name="irrigacao" id="irrigacao" required>
+                    <input type="text" class="form-control" name="irrigacao" id="irrigacao" placeholder="Ex.: 150,89" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="servicos_terceirizados">Serviços Terceirizados</label>
-                    <input type="text" class="form-control" name="servicos_terceirizados" id="servicos_terceirizados" required>
+                    <input type="text" class="form-control" name="servicos_terceirizados" id="servicos_terceirizados" placeholder="Ex.: 150,89" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="receitas">Receitas (Preço de venda)</label>
-                    <input type="text" class="form-control" name="receitas" id="receitas" required>
+                    <input type="text" class="form-control" name="receitas" id="receitas" placeholder="Ex.: 150,89" required>
                 </div>
             </div>
         </div>

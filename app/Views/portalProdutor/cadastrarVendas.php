@@ -24,26 +24,26 @@
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="data_venda">Data da Venda</label>
-                    <input id="date" type="text" class="form-control" name="data_venda" id="data_venda" required>
+                    <input id="date" type="text" class="form-control" name="data_venda" id="data_venda" placeholder="Ex.: <?= date('d/m/Y') ?>" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="cliente">Cliente</label>
-                    <input type="text" class="form-control" name="cliente" id="cliente" required>
+                    <input type="text" class="form-control" name="cliente" id="cliente" placeholder="Ex.: Fulano de Tal" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="produto">Produto</label>
-                    <input type="text" class="form-control" name="produto" id="produto" required>
+                    <input type="text" class="form-control" name="produto" id="produto" placeholder="Ex.: Pó de Café" required>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="quantidade">Quantidade</label>
-                    <input type="text" class="form-control" name="quantidade" id="quantidade" required>
+                    <input type="text" class="form-control" name="quantidade" id="quantidade" placeholder="Ex.: 14" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="preco_unitario">Preço Unitário</label>
-                    <input type="text" class="form-control" name="preco_unitario" id="preco_unitario" required>
+                    <input type="text" class="form-control" name="preco_unitario" id="preco_unitario" placeholder="Ex.: 13,90" required>
                 </div>
             </div>
         </div>
@@ -59,6 +59,7 @@
 
 <script>
     $('#date').mask('00/00/0000');
+    $('#preco_unitario').mask("#.##0,00", {reverse: true});
 </script>
 
 <?php echo $this->endSection() ?>

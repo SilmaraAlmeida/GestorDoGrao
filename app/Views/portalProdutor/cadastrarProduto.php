@@ -24,30 +24,30 @@
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="nome_produto">Nome do Produto</label>
-                    <input type="text" class="form-control" name="nome_produto" id="nome_produto" required>
+                    <input type="text" class="form-control" name="nome_produto" id="nome_produto" placeholder="Ex.: Pó de Café" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="categoria">Categoria</label>
-                    <input type="text" class="form-control" name="categoria" id="categoria" required>
+                    <input type="text" class="form-control" name="categoria" id="categoria" placeholder="Ex.: Pó" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="quantidade_estoque">Quantidade em Estoque</label>
-                    <input type="text" class="form-control" name="quantidade_estoque" id="quantidade_estoque" required>
+                    <input type="text" class="form-control" name="quantidade_estoque" id="quantidade_estoque" placeholder="Ex.: 150" required>
                 </div>
             </div>
             
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
                     <label for="preco_compra">Preço de Compra</label>
-                    <input id="money" type="text" class="form-control" name="preco_compra" id="preco_compra" required>
+                    <input id="money" type="text" class="form-control" name="preco_compra" id="preco_compra" placeholder="Ex.: 12,50" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="fornecedor">Fornecedor</label>
-                    <input type="text" class="form-control" name="fornecedor" id="fornecedor" required>
+                    <input type="text" class="form-control" name="fornecedor" id="fornecedor" placeholder="Ex.: Fulano de Tal" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="data_compra">Data de Compra</label>
-                    <input type="text" class="form-control" name="data_compra" id="data_compra" required>
+                    <input type="text" class="form-control" name="data_compra" id="data_compra" placeholder="Ex.: <?= date('d/m/Y') ?>" required>
                 </div>
             </div>
         </div>
