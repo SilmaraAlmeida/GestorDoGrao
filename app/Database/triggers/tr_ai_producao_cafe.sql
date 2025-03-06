@@ -24,6 +24,6 @@ VALUES (
 '', NEW.metodos_cultivo,
 '', NEW.producao_safra,
 'INSERT',
-'',
+NEW.user_id,
 CURRENT_TIMESTAMP
 );

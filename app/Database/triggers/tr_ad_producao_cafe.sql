@@ -24,6 +24,6 @@ OLD.variedade_cafe, '',
 OLD.metodos_cultivo, '',
 OLD.producao_safra, '',
 'DELETE',
-'',
+OLD.user_id,
 CURRENT_TIMESTAMP
 );
