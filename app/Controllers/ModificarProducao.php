@@ -3,10 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\Historico;
 use App\Models\ProducaoCafe;
-use CodeIgniter\HTTP\ResponseInterface;
-use CodeIgniter\Model;
 
 class ModificarProducao extends BaseController
 {
@@ -14,7 +11,7 @@ class ModificarProducao extends BaseController
 
     public function __construct()
     {
-        $dados = $this->producao = new ProducaoCafe();
+        $this->producao = new ProducaoCafe();
     }
 
     public function index()

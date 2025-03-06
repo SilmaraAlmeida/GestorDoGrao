@@ -64,5 +64,4 @@ $routes->get('/portalProdutor/estoqueAtual', 'EstoqueAtual::estoqueAtual', ['as'
 $routes->get('/portalProdutor/monitoramento', 'Monitoramento::chamarMonitoramento', ['as' => 'chamar_monitoramento']);
 // $routes->get('/portalProdutor/monitoramento', 'NavbarPortal::chamarMonitoramento', ['as' => 'chamar_monitoramento']);
 
-
 $routes->get('/portalProdutor/historicoProducoes', 'Historico::chamarHistoricoProducao',      ['as' => 'chamar_historico']);
