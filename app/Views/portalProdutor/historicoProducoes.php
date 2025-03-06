@@ -9,19 +9,57 @@
                 foreach ($historico as $item) {
                     switch ($item['acao']) {
                         case 'INSERT':
-                            ?> 
+                            ?>
                                 <p>O usuário '<?= session()->get('user')->nome ?>' <span class="text-success">criou</span> a produção '<?= $item['nome_producao_novo'] ?>'</p>
                                 <p>Data da ação: <?= $item['alterado_em'] ?></p>
                                 <hr>
                                 <?php
                         break;
                         case 'UPDATE':
-                            ?> 
+                            ?>
                                 <p>O usuário '<?= session()->get('user')->nome ?>' <span class="text-primary">atualizou</span> a produção '<?= $item['nome_producao_novo'] ?>'</p>
                                 <p>Data da ação: <?= $item['alterado_em'] ?></p>
+                            <?php
+                            $campos = [
+                                'nome_producao' => 'nome_producao',
+                                'estado' => 'estado',
+                                'cidade' => 'cidade',
+                                'telefone' => 'telefone',
+                                'area_plantada' => 'area_plantada',
+                                'variedade_cafe' => 'variedade_cafe',
+                                'metodo_cultivo' =>  'metodo_cultivo',
+                                'quantidade_safra' => 'quantidade_safra',
+                            ];
+
+                            $modificacoes =[];
+
+                            foreach ($campos as $campo_antigo => $campo_novo) {
+                                $campo_antigo_completo = $campo_antigo . '_antigo';
+                                $campo_novo_completo = $campo_novo . '_novo';
+
+                                if ($item[$campo_antigo_completo] != $item[$campo_novo_completo]) {
+                                    $modificacoes[$campo_novo] = $item[$campo_novo_completo];
+                                }
+                            }
+
+                            // ideia: colocar todas as condições em um só if e armazenar elas em variáveis
+                            // usar o empty pra ver se elas estão vazias e a partir daí exibir só as q tem valores
+
+                            if (!empty($modificacoes)) {
+                            ?>
                                 <p>Registro Modificado: </p>
+                                <ul>
+                                    <?php 
+                                        foreach ($modificacoes as $campo => $valor) {
+                                        ?>
+                                            <li><?= ucfirst($campo) . ': ' . $valor ?></li>
+                                        <?php
+                                        }
+                                    ?>
+                                </ul>
                                 <hr>
-                                <?php
+                            <?php
+                            }
                             break;
                         case 'DELETE':
                                 ?> 
