@@ -52,7 +52,7 @@
                                     <?php 
                                         foreach ($modificacoes as $campo => $valor) {
                                         ?>
-                                            <li><?= ucfirst($campo) . ': ' . $valor ?></li>
+                                            <li class="text-success"><?= ucfirst($campo) . ': ' . $valor ?></li>
                                         <?php
                                         }
                                     ?>
