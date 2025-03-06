@@ -22,8 +22,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group mt-4 mb-4">
-                    <label for="nome_completo">Nome da Produção</label>
-                    <input type="text" class="form-control" name="nome_completo" id="nome_completo" placeholder="Ex.: José Silva" value="<?php echo $producoes['nome_completo'] ?? '' ?>" required>
+                    <label for="nome_producao">Nome da Produção</label>
+                    <input type="text" class="form-control" name="nome_producao" id="nome_producao" placeholder="Ex.: José Silva" value="<?php echo $producoes['nome_producao'] ?? '' ?>" required>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="estado">Estado</label>

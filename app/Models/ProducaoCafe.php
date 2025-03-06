@@ -14,7 +14,7 @@ class ProducaoCafe extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         'id',
-        'nome_completo',
+        'nome_producao',
         'estado',
         'cidade',
         'telefone',

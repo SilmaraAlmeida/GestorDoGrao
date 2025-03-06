@@ -28,7 +28,7 @@
             <?php foreach ($producoes as $producao): ?>
                 <tr>
                     <td></td>
-                    <td><?php echo $producao['nome_completo'] ?></td>
+                    <td><?php echo $producao['nome_producao'] ?></td>
                     <td><?php echo $producao['estado'] ?></td>
                     <td><?php echo $producao['cidade'] ?></td>
                     <td><?php echo $producao['area_plantada'] ?></td>
