@@ -87,19 +87,19 @@
                             <tr class="highlight">
                                 <th scope="col">Produtor</th>
                                 <th scope="col">Produções</th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($usuarios as $usuario): ?>
                                 <tr>
                                     <th scope="row"><?php echo $usuario->nome; ?></th>
-
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td class="mb-4">
+                                        <?php foreach ($producoes as $producao): ?>
+                                            <?php if ($producao['user_id'] == $usuario->id): ?>
+                                                <?php echo $producao['nome_producao']; ?><br>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
