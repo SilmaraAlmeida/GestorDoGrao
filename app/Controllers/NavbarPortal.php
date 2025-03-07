@@ -12,11 +12,6 @@ class NavbarPortal extends BaseController
         var_dump('entrou no controller');
     }
 
-    public function chamarRegistrarProducoes()
-    {
-        return view('partials/header') . view('portalProdutor/formRegistrarProducoes');
-    }
-
     public function chamarModificarCrud()
     {
         return view('partials/header') . view('portalProdutor/modificarProducoes');
