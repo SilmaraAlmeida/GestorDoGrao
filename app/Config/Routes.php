@@ -23,7 +23,6 @@ $routes->post('/cadastrarDB', 'Cadastrar::store', ['as' => 'cadastrar_store']);
 $routes->get('/portalProdutor', 'PortalProdutor::index', ['as' => 'portal_produtor']);
 
 // ROTAS DA NAVBAR LATERAL DO PRODUTOR
-$routes->get('/portalProdutor/registrarProducoes', 'NavbarPortal::chamarRegistrarProducoes',     ['as' => 'chamar_registrar']);
 $routes->get('/portalProdutor/cadastrarVendas', 'NavbarPortal::chamarCadastrarVendas',           ['as' => 'chamar_vendas']);
 $routes->get('/portalProdutor/controleEstoque', 'NavbarPortal::chamarControleEstoque',           ['as' => 'chamar_estoque']);
 $routes->get('/portalProdutor/analiseProdutividade', 'NavbarPortal::chamarAnaliseProdutividade', ['as' => 'chamar_produtividade']);
@@ -45,6 +44,8 @@ $routes->get('/portalProdutor/formVisualizarProducao/(:any)', 'ModificarProducao
 $routes->get('/portalProdutor/formEditarProducao/(:any)', 'ModificarProducao::editar/$1', ['as' => 'form_editar_producao']);
 $routes->post('/portalProdutor/formEditarProducao/(:any)', 'ModificarProducao::update/$1', ['as' => 'form_editar_producao']);
 $routes->get('/portalProdutor/deletarProducao/(:any)', 'ModificarProducao::deletar/$1', ['as' => 'deletar_producao']);
+
+$routes->get('/portalProdutor/registrarProducoes', 'ModificarProducao::chamarRegistrarProducoes',     ['as' => 'chamar_registrar']);
 
 // OPÇÃO 'CONTROLE DE CUSTOS' NA NAVBAR DO PRODUTOR
 $routes->post('/portalProdutor/registroCustosStore', 'RegistroCustos::CadastrarGastos', ['as' => 'cadastrar_gastos']);
