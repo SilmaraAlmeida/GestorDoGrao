@@ -7,11 +7,11 @@ new Chart(document.getElementById("bar-chart-grouped"), {
       datasets: [
         {
           label: "Faturamento",
-          backgroundColor: "#3e95cd",
+          backgroundColor: "#2d6a4f",
           data: [133,221,783,2478]
         }, {
           label: "Perda",
-          backgroundColor: "#8e5ea2",
+          backgroundColor: "#40916c",
           data: [408,547,675,734]
         }
       ]
