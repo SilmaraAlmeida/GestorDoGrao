@@ -52,10 +52,10 @@
                 <div class="form-group mt-4 mb-4">
                     <label for="metodos_cultivo">Metodos de Cultivo</label>
                     <select name="metodos_cultivo" class="form-control" id="metodos_cultivo">
-                        <option value="Cultivo Tradicional">Cultivo Tradicional</option>
-                        <option value="Agro Floresta">Agro Floresta</option>
-                        <option value="Sistema de Sombras">Sistema de Sombras</option>
-                        <option value="Cultivo Orgânico">Cultivo Orgânico</option>
+                        <?php $metodoCultivo = $producoes['metodos_cultivo'] ?>
+                        <?php foreach ($metodos_cultivo as $metodo_cultivo): ?>
+                            <option value="<?= $metodo_cultivo['nome_metodo'] ?>" <?= $metodoCultivo == $metodo_cultivo['nome_metodo'] ? 'selected' : '' ?>><?= $metodo_cultivo['nome_metodo'] ?></option>
+                        <?php endforeach ?>
                     </select>
                 </div>
                 <div class="form-group mt-4 mb-4">
