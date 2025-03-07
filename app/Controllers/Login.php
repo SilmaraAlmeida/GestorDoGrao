@@ -34,7 +34,7 @@ class Login extends BaseController
         unset($userFound->password);
 
         session()->set('user', $userFound);
-
+        
         session()->set('user_id', $userFound->id);
 
         return redirect()->route('portal_produtor');

@@ -7,6 +7,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class PortalProdutor extends BaseController
 {
+
     public function index()
     {
         return view('partials/header') . view('portalProdutor/homePortal');

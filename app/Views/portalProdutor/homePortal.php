@@ -185,12 +185,9 @@
                     </ul>
                 </div>
             </nav>
-            <?php $mostrarConteudo = false ?>
-            <?php if (!$mostrarConteudo): ?>
                 <p>user_name: <?php echo session()->get('user')->nome ?> <br> user_id: <?php echo session()->get('user_id') ?></p>
-            <?php else: ?>
+
                 <?= $this->renderSection('content') ?>
-            <?php endif ?>
 
             <body class="d-flex flex-column min-vh-100">
                 <footer class="footer mt-auto py-3 bg-light">
