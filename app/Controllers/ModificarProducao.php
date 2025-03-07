@@ -34,6 +34,7 @@ class ModificarProducao extends BaseController
     {
         return view('partials/header') . view('portalProdutor/formRegistrarProducoes', [
             'metodos_cultivo' => $this->metodos_cultivo->findAll(),
+            'tipos_cafe' => $this->tipo_cafe->findAll(),
         ]);
     }
 
@@ -63,6 +64,7 @@ class ModificarProducao extends BaseController
         return view('portalProdutor/formViewsProducoes', [
             'producoes' => $this->producao->find($id),
             'metodos_cultivo' => $this->metodos_cultivo->findAll(),
+            'tipos_cafe' => $this->tipo_cafe->findAll(),
         ]);
     }
 
@@ -71,6 +73,7 @@ class ModificarProducao extends BaseController
         return view('portalProdutor/formEditarProducoes', [
             'producoes' => $this->producao->find($id),
             'metodos_cultivo' => $this->metodos_cultivo->findAll(),
+            'tipos_cafe' => $this->tipo_cafe->findAll(),
         ]);
     }
 

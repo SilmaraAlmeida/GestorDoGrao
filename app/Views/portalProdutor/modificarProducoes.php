@@ -10,7 +10,7 @@
     <?php endif ?>
 </div>
 
-<div class="container">
+<div class="container mb-5">
     <table class="table" id="tabela">
         <thead>
             <th>
