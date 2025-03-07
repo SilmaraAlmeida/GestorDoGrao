@@ -46,7 +46,12 @@
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="variedade_cafe">Variedade do Café</label>
-                    <input type="text" class="form-control" name="variedade_cafe" id="variedade_cafe" placeholder="Ex.: Arábica" value="<?php echo isset($producoes['variedade_cafe']) ? $producoes['variedade_cafe'] : '' ?>" required>
+                    <select name="variedade_cafe" class="form-control" id="variedade_cafe">
+                        <?php $variedadeCafe = $producoes['variedade_cafe'] ?>
+                        <?php foreach ($tipos_cafe as $tipo_cafe): ?>
+                            <option value="<?= $tipo_cafe['nome'] ?>" <?= $variedadeCafe == $tipo_cafe['nome'] ? 'selected' : '' ?>><?= $tipo_cafe['nome'] ?></option>
+                        <?php endforeach ?>
+                    </select>
                 </div>
                 <div class="form-group mt-4 mb-4">
                     <label for="metodos_cultivo">Metodos de Cultivo</label>
