@@ -42,9 +42,6 @@
                                 }
                             }
 
-                            // ideia: colocar todas as condições em um só if e armazenar elas em variáveis
-                            // usar o empty pra ver se elas estão vazias e a partir daí exibir só as q tem valores
-
                             if (!empty($modificacoes)) {
                             ?>
                                 <p>Registro Modificado: </p>
