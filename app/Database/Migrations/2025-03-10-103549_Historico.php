@@ -77,7 +77,7 @@ class Historico extends Migration
             ],
             'acao' => [
                 'type' => 'ENUM',
-                'constraint' => 'INSERT, UPDATE, DELETE',
+                'constraint' => ['INSERT', 'UPDATE', 'DELETE'],
             ],
             'alterado_por' => [
                 'type' => 'INT',

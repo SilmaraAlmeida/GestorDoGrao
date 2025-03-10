@@ -13,6 +13,7 @@ class MetodosCultivo extends Migration
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true,
+                'null' => false,
                 'auto_increment' => true,
             ],
             'nome_metodo' => [
