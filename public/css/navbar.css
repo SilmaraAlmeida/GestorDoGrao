@@ -23,7 +23,7 @@ header {
 
 .header-overlay {
     padding: 30px;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
@@ -46,7 +46,7 @@ header {
 }
 
 .saiba-mais a {
-    color: #ffffff;
+    color: #fff;
     font-size: 18px;
     text-decoration: none;
 }
@@ -90,7 +90,7 @@ header {
 
 .navbar-light .navbar-nav .login-link:hover {
     background: #006135;
-    color: white;
+    color: #fff;
 }
 
 /* Estilos pro botão de cadastro */
@@ -107,7 +107,7 @@ header {
 }
 
 .navbar-light .navbar-nav .register-btn .register-link {
-    color: white;
+    color: #fff;
     padding: 2px 5px;
     text-decoration: none;
     padding-top: 5px;
