@@ -66,3 +66,5 @@ $routes->get('/portalProdutor/monitoramento', 'Monitoramento::chamarMonitorament
 // $routes->get('/portalProdutor/monitoramento', 'NavbarPortal::chamarMonitoramento', ['as' => 'chamar_monitoramento']);
 
 $routes->get('/portalProdutor/historicoProducoes', 'Historico::chamarHistoricoProducao',      ['as' => 'chamar_historico']);
+
+$routes->get('/portalProdutor/chartsjs', 'Monitoramento:dadosCharts', ['as' => 'dadosCharts']);
