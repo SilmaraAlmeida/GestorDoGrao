@@ -1,5 +1,6 @@
 <?php echo $this->extend('portalProdutor/homePortal') ?>
 <?php echo $this->section('content') ?>
+<link rel="stylesheet" href=" <?= base_url('css/monitoramento.css') ?> ">
 
 <main class="container content px-3 py-3">
     <div class="conteiner-fluid">
@@ -81,6 +82,15 @@
             </div>
             <div class="row mt-5">
                 <div class="col-12 col-md-6">
+                    <h3 class="fw-bold fs-4 my-3">
+                        Visão geral dos relatórios
+                    </h3>
+                    <canvas id="bar-chart-grouped-one" width="800" height="450"></canvas>
+                </div>
+                <div class="col-12 col-md-6">
+                    <canvas id="bar-chart-grouped-two" width="800" height="450"></canvas>
+                </div>
+                <div class="col-12 col-md-12">
                     <h3 class="fw-bold my-3">Produtor - Produções Cadastradas</h3>
                     <table class="table table-striped">
                         <thead>
@@ -106,14 +116,9 @@
                     </table>
 
                 </div>
-                <div class="col-12 col-md-6">
-                    <h3 class="fw-bold fs-4 my-3">
-                        Visão geral dos relatórios
-                    </h3>
-                    <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
-                </div>
             </div>
         </div>
     </div>
 </main>
+<script src=" <?= base_url('js/monitoramento.js') ?> "></script>
 <?php echo $this->endSection() ?>
