@@ -16,7 +16,6 @@
 
     <link rel="stylesheet" href=" <?= base_url('css/sidebar-portal.css') ?> ">
     <link rel="stylesheet" href=" <?= base_url('css/navbar-portal.css') ?> ">
-    <link rel="stylesheet" href=" <?= base_url('css/monitoramento.css') ?> ">
 
 </head>
 
@@ -224,7 +223,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script src=" <?= base_url('js/navbar-portal.js') ?> "></script>
-    <script src=" <?= base_url('js/monitoramento.js') ?> "></script>
 
 </body>
 
