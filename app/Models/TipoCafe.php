@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class TipoCafe extends Model
 {
-    protected $table            = 'tipo_cafe';
+    protected $table            = 'variedade_cafe';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';

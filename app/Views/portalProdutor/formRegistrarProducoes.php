@@ -48,7 +48,7 @@
                     <label for="variedade_cafe">Variedade do Café</label>
                     <select class="form-control" name="variedade_cafe" id="variedade_cafe">
                         <?php foreach ($tipos_cafe as $tipo_Cafe): ?>
-                            <option value="<?= $tipo_Cafe['nome'] ?>"><?= $tipo_Cafe['nome'] ?></option>
+                            <option value="<?= $tipo_Cafe['nome_variedade'] ?>"><?= $tipo_Cafe['nome_variedade'] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>
@@ -56,7 +56,7 @@
                     <label for="metodos_cultivo">Metodos de Cultivo</label>
                     <select name="metodos_cultivo" class="form-control" id="metodos_cultivo">
                         <?php foreach ($metodos_cultivo as $metodo_cultivo): ?>
-                            <option value="<?= $metodo_cultivo['nome_metodo'] ?>"><?= $metodo_cultivo['nome_metodo'] ?></option>
+                            <option value="<?= $metodo_cultivo['nome_variedade'] ?>"><?= $metodo_cultivo['nome_metodo'] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>

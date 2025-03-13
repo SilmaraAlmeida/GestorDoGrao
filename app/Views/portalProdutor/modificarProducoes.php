@@ -32,8 +32,8 @@
                     <td><?php echo $producao['estado'] ?></td>
                     <td><?php echo $producao['cidade'] ?></td>
                     <td><?php echo $producao['area_plantada'] ?></td>
-                    <td><?php echo $producao['variedade_cafe'] ?></td>
-                    <td><?php echo $producao['metodos_cultivo'] ?></td>
+                    <td><?php echo $producao['id_variedade_cafe'] ?></td>
+                    <td><?php echo $producao['id_metodos_cultivo'] ?></td>
                     <td><?php echo $producao['producao_safra'] ?></td>
                     <td>
                         <?php echo anchor('portalProdutor/formVisualizarProducao/' . $producao['id'], "<i class='bx bx-low-vision text-success'></i>") ?>

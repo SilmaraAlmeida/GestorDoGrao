@@ -14,15 +14,15 @@ class ProducaoCafe extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         'id',
+        'id_usuario',
         'nome_producao',
         'estado',
         'cidade',
         'telefone',
         'area_plantada',
-        'variedade_cafe',
-        'metodos_cultivo',
-        'producao_safra',
-        'user_id'
+        'id_variedade_cafe',
+        'id_metodos_cultivo',
+        'producao_safra'
     ];
 
     protected bool $allowEmptyInserts = false;

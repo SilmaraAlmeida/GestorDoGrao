@@ -10,22 +10,6 @@ CREATE TABLE IF NOT EXISTS usuario (
 	UNIQUE KEY email (email)
 )ENGINE=InnoDB DEFAULT CHARSET = UTF8;
 
-CREATE TABLE IF NOT EXISTS producao_cafe (
-	id INT NOT NULL AUTO_INCREMENT,
-	id_usuario INT NOT NULL,
-	nome_producao VARCHAR(100) NOT NULL,
-	estado VARCHAR(100) NOT NULL,
-	cidade VARCHAR(100) NOT NULL,
-	telefone VARCHAR(15) NOT NULL,
-	area_plantada DECIMAL(10, 2) NOT NULL,
-	variedade_cafe VARCHAR(100) NOT NULL,
-	metodos_cultivo VARCHAR(50) NOT NULL,
-	producao_safra INT NOT NULL,
-	PRIMARY KEY (id),
-	KEY producao_usuario_id_foreign (id_usuario),
-	CONSTRAINT producao_usuario_id_foreign FOREIGN KEY (id_usuario) REFERENCES usuario (id)
-)ENGINE=InnoDB DEFAULT CHARSET = UTF8;
-
 CREATE TABLE IF NOT EXISTS historico (
 	id INT NOT NULL AUTO_INCREMENT,
 	id_usuario INT NOT NULL,
@@ -108,6 +92,24 @@ CREATE TABLE IF NOT EXISTS metodos_cultivo (
 	nome_metodo VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id)
 )ENGINE=InnoDB DEFAULT CHARSET = UTF8;
+
+CREATE TABLE IF NOT EXISTS producao_cafe (
+    id INT NOT NULL AUTO_INCREMENT,
+    id_usuario INT NOT NULL,
+    nome_producao VARCHAR(100) NOT NULL,
+    estado VARCHAR(100) NOT NULL,
+    cidade VARCHAR(100) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    area_plantada DECIMAL(10, 2) NOT NULL,
+    id_variedade_cafe INT NOT NULL,
+    id_metodos_cultivo INT NOT NULL,
+    producao_safra INT NOT NULL,
+    PRIMARY KEY (id),
+    CONSTRAINT producao_usuario_id_foreign FOREIGN KEY (id_usuario) REFERENCES usuario (id),
+    CONSTRAINT variedade_cafe_id_foreign FOREIGN KEY (id_variedade_cafe) REFERENCES variedade_cafe (id),
+    CONSTRAINT metodos_cultivo_id_foreign FOREIGN KEY (id_metodos_cultivo) REFERENCES metodos_cultivo (id)
+)ENGINE=InnoDB DEFAULT CHARSET = UTF8;
+
 
 INSERT INTO metodos_cultivo (nome_metodo) VALUES
 	('Cultivo Tradicional'),

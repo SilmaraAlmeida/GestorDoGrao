@@ -23,7 +23,7 @@ class ModificarProducao extends BaseController
     public function index()
     {
         $user_id = session()->get('user_id');
-        $producoes = $this->producao->where('user_id', $user_id)->findAll();
+        $producoes = $this->producao->where('id_usuario', $user_id)->findAll();
 
         return view('partials/header') . view('portalProdutor/modificarProducoes', [
             'producoes' => $producoes,
@@ -42,11 +42,11 @@ class ModificarProducao extends BaseController
     {
         $producao = new ProducaoCafe();
 
-        $user_id = session()->get('user_id');
+        // $user_id = session()->get('user_id');
 
         $data = $this->request->getPost();
 
-        $data['user_id'] = $user_id;
+        // $data['user_id'] = $user_id;p
 
         $inserted = $producao->insert($data);
 
