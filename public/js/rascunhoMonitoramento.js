@@ -1,36 +1,72 @@
-if (document.getElementById("bar-chart-grouped")) {
+if (document.getElementById("bar-chart-grouped-one") && document.getElementById("bar-chart-grouped-two")) {
     fetch("/js/testCharts.php")
     .then((response) => response.json())
     .then((data) => {
-        createChart(data.data, data.totalFaturado);
-    });
+        createChartOne(data.data);
+    })
+    .then((responseTwo) => responseTwo.json())
+    .then((dataTwo) => {
+        createChartTwo(dataTwo.totalFaturado);
+    })
+    .catch((error) => {
+        console.error("Erro ao carregar dados", error);
+    })
 }
 
-function createChart(chartData, totalFaturado) {
-    console.log(chartData.map(row => row.data_registro));
+function createChartOne(resultados) {
+    console.log("Totais Gastos:", resultados);
 
-    new Chart(document.getElementById("bar-chart-grouped"), {
+    new Chart(document.getElementById("bar-chart-grouped-one"), {
         type: 'bar',
         data: {
-            labels: chartData.map(row => row.data_registro),
+            labels: resultados.map((_, index) => `Registro ${index + 1}`),
             datasets: [
                 {
-                    label: "Valor Faturado",
-                    backgroundColor: "#2d6a4f",
-                    data: chartData.map(row => row.custo_insumo)
-                },
-                {
-                    label: "Perda",
+                    label: "Total Gasto",
                     backgroundColor: "#40916c",
-                    data: new Array(chartData.length).fill(totalFaturado)
+                    data: resultados,
                 }
             ]
         },
         options: {
             title: {
                 display: true,
-                text: 'Monitoramento de Custos e Perda'
+                text: 'Monitoramento de Custos e Perda',
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                }
             }
         }
     });
+}
+
+function createChartTwo(resultadosSecondQuery, totalFaturado) {
+    console.log("Totais Faturados:", resultadosSecondQuery);
+
+    new Chart(document.getElementById('bar-chart-grouped-two'), {
+        type: 'bar',
+        data: {
+            labels: resultadosSecondQuery.map((_, index) => `Registro ${index + 1}`),
+            datasets: [
+                {
+                    label: "Perda",
+                    backgroundColor: "#40916c",
+                    data: new Array(resultadosSecondQuery.length).fill(totalFaturado)
+                }
+            ]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Monitoramento de Faturamentos e Ganhos',
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                }
+            }
+        }
+    })
 }

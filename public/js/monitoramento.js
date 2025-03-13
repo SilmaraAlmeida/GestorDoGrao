@@ -1,14 +1,16 @@
-if (document.getElementById("bar-chart-grouped-one")) {
+if (document.getElementById("bar-chart-grouped-one") && document.getElementById("bar-chart-grouped-two")) {
     fetch("/js/testCharts.php")
-    .then((response) => response.json())
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error("Erro na requisição: " + response.statusText);
+
+            return response.json();
+        }
+    })
     .then((data) => {
         createChartOne(data.data);
 
-        return fetch("/js/testSecondCharts.php")
-    })
-    .then((responseTwo) => responseTwo.json())
-    .then((dataTwo) => {
-        createChartTwo(dataTwo.totalFaturado);
+        createChartTwo(data.totalFaturado);
     })
     .catch((error) => {
         console.error("Erro ao carregar dados", error);
