@@ -21,7 +21,7 @@ function createChartOne(resultados) {
             datasets: [
                 {
                     label: "Perdas",
-                    backgroundColor: "#40916c",
+                    backgroundColor: "#004d28",
                     data: resultados,
                 }
             ]
