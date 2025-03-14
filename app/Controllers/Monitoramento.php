@@ -40,6 +40,6 @@ class Monitoramento extends BaseController
 
     private function getProducao($user_id)
     {
-        return $this->producao->where('user_id', $user_id)->findAll();
+        return $this->producao->where('id_usuario', $user_id)->findAll();
     }
 }

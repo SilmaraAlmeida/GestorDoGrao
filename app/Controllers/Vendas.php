@@ -21,7 +21,7 @@ class Vendas extends BaseController
 
         $data = $this->request->getPost();
 
-        $data['user_id'] = $user_id;
+        $data['id_usuario'] = $user_id;
 
         $inserted = $vendas->insert($data); 
 

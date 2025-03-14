@@ -19,7 +19,7 @@ class Historico extends BaseController
         $historicoModel = new ModelsHistorico();
         
         $user_id = session()->get('user_id');
-        $estoque = $historicoModel->where('alterado_por', $user_id)->orderBy('id', 'desc')->findAll();
+        $estoque = $historicoModel->where('id_usuario', $user_id)->orderBy('id', 'desc')->findAll();
     
         return view('partials/header') . view('portalProdutor/historicoProducoes', [
             'historico' => $estoque

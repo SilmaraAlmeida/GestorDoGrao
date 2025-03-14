@@ -105,7 +105,7 @@
                                     <th scope="row"><?php echo $usuario->nome; ?></th>
                                     <td class="mb-4">
                                         <?php foreach ($producoes as $producao): ?>
-                                            <?php if ($producao['user_id'] == $usuario->id): ?>
+                                            <?php if ($producao['id_usuario'] == $usuario->id): ?>
                                                 <?php echo $producao['nome_producao']; ?><br>
                                             <?php endif; ?>
                                         <?php endforeach; ?>
@@ -114,7 +114,6 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
-
                 </div>
             </div>
         </div>
