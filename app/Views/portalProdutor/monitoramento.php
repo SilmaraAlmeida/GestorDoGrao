@@ -80,11 +80,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 ">
+                <h3 class="fw-bold fs-4 my-3">
+                    Visão geral dos relatórios
+                </h3>
                 <div class="col-12 col-md-6">
-                    <h3 class="fw-bold fs-4 my-3">
-                        Visão geral dos relatórios
-                    </h3>
                     <canvas id="bar-chart-grouped-one" width="800" height="450"></canvas>
                 </div>
                 <div class="col-12 col-md-6">

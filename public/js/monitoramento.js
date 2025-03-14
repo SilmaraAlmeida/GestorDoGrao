@@ -1,15 +1,9 @@
 if (document.getElementById("bar-chart-grouped-one") && document.getElementById("bar-chart-grouped-two")) {
     fetch("/js/testCharts.php")
-    .then((response) => {
-        if (!response.ok) {
-            throw new Error("Erro na requisição: " + response.statusText);
-
-            return response.json();
-        }
-    })
+    .then((response) => response.json())
     .then((data) => {
         createChartOne(data.data);
-
+        
         createChartTwo(data.totalFaturado);
     })
     .catch((error) => {
@@ -57,7 +51,7 @@ function createChartTwo(resultadosSecondQuery, totalFaturado) {
                 {
                     label: "Perda",
                     backgroundColor: "#40916c",
-                    data: new Array(resultadosSecondQuery.length).fill(totalFaturado)
+                    data: resultadosSecondQuery
                 }
             ]
         },
