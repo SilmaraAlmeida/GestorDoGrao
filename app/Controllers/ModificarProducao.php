@@ -42,11 +42,12 @@ class ModificarProducao extends BaseController
     {
         $producao = new ProducaoCafe();
 
-        // $user_id = session()->get('user_id');
+        $user_id = session()->get('user_id');
 
         $data = $this->request->getPost();
-
-        // $data['user_id'] = $user_id;p
+        
+        $data['id_usuario'] = $user_id;
+        // dd($data);
 
         $inserted = $producao->insert($data);
 
