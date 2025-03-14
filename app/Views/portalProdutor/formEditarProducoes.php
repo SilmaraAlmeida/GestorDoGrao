@@ -49,7 +49,7 @@
                     <select name="variedade_cafe" class="form-control" id="variedade_cafe">
                         <?php $variedadeCafe = $producoes['variedade_cafe'] ?>
                         <?php foreach ($tipos_cafe as $tipo_cafe): ?>
-                            <option value="<?= $tipo_cafe['nome'] ?>" <?= $variedadeCafe == $tipo_cafe['nome'] ? 'selected' : '' ?>><?= $tipo_cafe['nome'] ?></option>
+                            <option value="<?= $tipo_cafe['nome_variedade'] ?>" <?= $variedadeCafe == $tipo_cafe['nome_variedade'] ? 'selected' : '' ?>><?= $tipo_cafe['nome_variedade'] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>

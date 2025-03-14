@@ -56,7 +56,7 @@
                     <label for="metodos_cultivo">Metodos de Cultivo</label>
                     <select name="metodos_cultivo" class="form-control" id="metodos_cultivo">
                         <?php foreach ($metodos_cultivo as $metodo_cultivo): ?>
-                            <option value="<?= $metodo_cultivo['nome_variedade'] ?>"><?= $metodo_cultivo['nome_metodo'] ?></option>
+                            <option value="<?= $metodo_cultivo['nome_metodo'] ?>"><?= $metodo_cultivo['nome_metodo'] ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>
