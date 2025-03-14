@@ -20,7 +20,7 @@ function createChartOne(resultados) {
             labels: resultados.map((_, index) => `Registro ${index + 1}`),
             datasets: [
                 {
-                    label: "Total Gasto",
+                    label: "Perdas",
                     backgroundColor: "#40916c",
                     data: resultados,
                 }
@@ -49,7 +49,7 @@ function createChartTwo(resultadosSecondQuery, totalFaturado) {
             labels: resultadosSecondQuery.map((_, index) => `Registro ${index + 1}`),
             datasets: [
                 {
-                    label: "Perda",
+                    label: "Faturamento",
                     backgroundColor: "#40916c",
                     data: resultadosSecondQuery
                 }

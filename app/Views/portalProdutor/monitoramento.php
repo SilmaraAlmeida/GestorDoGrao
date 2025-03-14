@@ -80,17 +80,19 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 ">
-                <h3 class="fw-bold fs-4 my-3">
-                    Visão geral dos relatórios
-                </h3>
-                <div class="col-12 col-md-6">
-                    <canvas id="bar-chart-grouped-one" width="800" height="450"></canvas>
+            <div class="row mt-5">
+                <div class="row col-mt-12 mb-5">
+                    <h3 class="fw-bold fs-4 my-3">
+                        Visão geral dos gastos e ganhos por mês
+                    </h3>
+                    <div class="col-12 col-md-6">
+                        <canvas id="bar-chart-grouped-one" width="800" height="450"></canvas>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <canvas id="bar-chart-grouped-two" width="800" height="450"></canvas>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <canvas id="bar-chart-grouped-two" width="800" height="450"></canvas>
-                </div>
-                <div class="col-12 col-md-12">
+                <div class="col-12 col-md-12 mt-4">
                     <h3 class="fw-bold my-3">Produtor - Produções Cadastradas</h3>
                     <table class="table table-striped">
                         <thead>
