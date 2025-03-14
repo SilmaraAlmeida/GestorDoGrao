@@ -20,8 +20,8 @@ class ProducaoCafe extends Model
         'cidade',
         'telefone',
         'area_plantada',
-        'id_variedade_cafe',
-        'id_metodos_cultivo',
+        'variedade_cafe',
+        'metodos_cultivo',
         'producao_safra'
     ];
 

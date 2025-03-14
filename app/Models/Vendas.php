@@ -14,12 +14,12 @@ class Vendas extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         'id',
+        'id_usuario',
         'data_venda',
         'cliente',
         'produto',
         'quantidade',
         'preco_unitario',
-        'user_id'
     ];
 
     protected bool $allowEmptyInserts = false;

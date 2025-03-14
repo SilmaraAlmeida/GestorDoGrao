@@ -14,6 +14,7 @@ class Estoque extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         'id',
+        'id_usuario',
         'nome_produto',
         'tipo_cafe',
         'categoria',
@@ -23,7 +24,6 @@ class Estoque extends Model
         'fornecedor',
         'data_compra',
         'notas_adicionais',
-        'user_id'
     ];
 
     protected bool $allowEmptyInserts = false;

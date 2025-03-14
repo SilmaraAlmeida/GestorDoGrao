@@ -14,6 +14,7 @@ class Custos extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         'id',
+        'id_usuario',
         'data_registro',
         'custo_insumo',
         'mao_de_obra',
@@ -21,8 +22,7 @@ class Custos extends Model
         'irrigacao',
         'servicos_terceirizados',
         'metodos_cultivo',
-        'receitas',
-        'user_id'
+        'receitas'
     ];
 
     protected bool $allowEmptyInserts = false;

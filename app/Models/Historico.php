@@ -14,6 +14,7 @@ class Historico extends Model
     protected $protectFields    = true;
     protected $allowedFields    = [
         'id',
+        'id_usuario',
         'nome_producao_antigo',
         'nome_producao_novo',
         'estado_antigo',
@@ -30,7 +31,6 @@ class Historico extends Model
         'metodo_cultivo_novo',
         'quantidade_safra_antigo',
         'quantidade_safra_novo',
-        'alterado_por',
         'alterado_em',
     ];
 
