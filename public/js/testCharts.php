@@ -13,7 +13,7 @@ try {
     }
 
     // segunda query
-    $secondQuery = $conexao->prepare('SELECT quantidade * preco_unitario AS total_faturado FROM vendas');
+    $secondQuery = $conexao->prepare('SELECT quantidade * preco_unitario AS total_faturado FROM vendas'); 
     $secondQuery->execute();
 
     $resultadosSecondQuery = [];
